@@ -1,11 +1,11 @@
 {
-  "version": "1.0.3",
-  "notes": "Versão exibida na navbar + auto-updater corrigido",
+  "version": "1.0.4",
+  "notes": "Olhinho de senha aparece só ao digitar",
   "pub_date": "2026-05-24T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGdnZUd3K2l4bTZqWXFzTXUrUHhQQy9iWDhTWFI1MXc5dkZiMm9EM2ZEekd0V25TUW53a2RxWXdKSXU5Z0RFbDV2ZktCVWZjOGlrQ0dGRnJoVk1kMEEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTkzMTE5CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4zX3g2NC1zZXR1cC5leGUKV3p3R3RtTXlqdkJvYWpHUkcrVmJTazQ4ckpkUC9sMmNnVVc3cTlySEl2dWdPL1hhblRVd1l4b2Q1MjU4QkxuQnkxdW1uYVowbzFlTGtYWU9DRUdjQVE9PQo=",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.3/Synx.Sistema_1.0.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZuQXZKaUI0enAxTHhiWFYxYzUyOGRmNkRadVJOc3BwNHZ3MExYTkE1RzV6TGxhdU14MHZuREVaVFlXckRJc3VOajJheFQ3R3VlQlBWMklmMnIvQlFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTkzODc2CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40X3g2NC1zZXR1cC5leGUKNzJiNEorVHlNbDdVZkYzVS8wekxuOXdjVlJkZGl4a3F6dktDMmtMWXRseWVBc1ZDdC9zUElIejNuajBrNTc0Q3JWYlBYZjVaRXQxQkk0bVBETzNMREE9PQo=",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.4/Synx.Sistema_1.0.4_x64-setup.exe"
     }
   }
 }
