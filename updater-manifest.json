@@ -1,0 +1,11 @@
+{
+  "version": "1.0.3",
+  "notes": "Versão exibida na navbar + auto-updater corrigido",
+  "pub_date": "2026-05-24T00:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGl6YTE2cjZTQWxCeUtZb1NmSVdaQmZuSlliczEwOVVwNGNCRC93ZjBSTDNXN3R0bjJhaDRZYjErTmlnT3hiUzlDYzNDamdwdjAvRDRQdDBjVkZBalFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTkyNjk0CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4zX3g2NC1zZXR1cC5leGUKTmNCSUpZbXU0T3k4R1JQNVNjZkZZbW5SMms2cDFydk1uczdNVHZJaWI2UGtSN2RZMVZ6MEZaWVpPb1pncFhvd1NURG9pNUhzeFRobE40OVZla2tkQnc9PQo=",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.3/Synx.Sistema_1.0.3_x64-setup.exe"
+    }
+  }
+}
