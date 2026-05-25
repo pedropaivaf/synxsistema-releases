@@ -1,11 +1,11 @@
 {
-  "version": "1.0.6",
-  "notes": "Imagens temáticas nos produtos demo + preços realistas de custo",
+  "version": "1.0.7",
+  "notes": "100 produtos demo com fotos Unsplash por produto + preços realistas de atacado",
   "pub_date": "2026-05-24T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHFQbDFGR0w0TXg3S0M2NURwd1Y0REVLWGdWRW51WXpvYUo5Y3crQXBBY3hxUHdxWWRlMlMvRVB5WkV3Tk1LRUFWOFdhUXhZcStuYXU2bGN0QnZzRndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzQzNzE0CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42X3g2NC1zZXR1cC5leGUKdDN6YVB3M21aU1g0ei9uRkdUTXBwWG5SS3hTOUwwalFuODFRc2I0dDlPUUhOWjdJTU9MN2hiZlMxdkUveEREOElhOTRVMWlYZ2RFUjMzYi9uY0YwREE9PQo=",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.6/Synx.Sistema_1.0.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHFGenRhUUNvNUpvaGpLZ21DOWdzRTB5YWVZQ2ZnL2lYei82VUgrZzJKK3BkY0VuZjRjMm9PTVdiYWhDVWpVbkx6a0dEQWtUcUwyYlpFTU1xWnVEdHdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzQ1MjA5CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43X3g2NC1zZXR1cC5leGUKWEtENWl5K0ViYjB4SEVyZHQrRm9ib29FWUlaQnhPczBqdWtpd3YxOTdZdGtxeXF4K0FVTXg4ZnVaaUc4U2ptSHNlZW9iaU1Oek1sWHBsbllDb2ZQQUE9PQo=",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.7/Synx.Sistema_1.0.7_x64-setup.exe"
     }
   }
 }
