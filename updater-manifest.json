@@ -1,11 +1,11 @@
 {
-  "version": "1.0.7",
-  "notes": "100 produtos demo com fotos Unsplash por produto + preços realistas de atacado",
+  "version": "1.0.8",
+  "notes": "Catálogo demo correto: 30 produtos com CST/NCM reais + Itens Essenciais (Cesta Básica MG)",
   "pub_date": "2026-05-24T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHFGenRhUUNvNUpvaGpLZ21DOWdzRTB5YWVZQ2ZnL2lYei82VUgrZzJKK3BkY0VuZjRjMm9PTVdiYWhDVWpVbkx6a0dEQWtUcUwyYlpFTU1xWnVEdHdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzQ1MjA5CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43X3g2NC1zZXR1cC5leGUKWEtENWl5K0ViYjB4SEVyZHQrRm9ib29FWUlaQnhPczBqdWtpd3YxOTdZdGtxeXF4K0FVTXg4ZnVaaUc4U2ptSHNlZW9iaU1Oek1sWHBsbllDb2ZQQUE9PQo=",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.7/Synx.Sistema_1.0.7_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGpTTDBVSHc5bEVINFRrRVo0SUJpSnhscGtzaGFrM2Jwcmk1cm1MV3l3YmMyRmRMU1ZYQytpSytRbGtyQW5WTTd4SlRHTE9Fa3Bkc3VFVEo2WG9ZU0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzQ2ODE0CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC44X3g2NC1zZXR1cC5leGUKdkN0eE9DaVM0ZVhkRTlKbWdZUXJtT1RjYWNscGY3Z25jUGRXL2x3N0FLeENDQ0ppTzI2N0twcUNlMkpIU0JMV2xrb0tvdDJZMVRhaDRhd3dWL3NKRFE9PQo=",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.8/Synx.Sistema_1.0.8_x64-setup.exe"
     }
   }
 }
