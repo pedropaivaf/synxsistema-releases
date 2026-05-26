@@ -1,11 +1,11 @@
 {
-  "version": "1.0.15",
-  "notes": "Remove migration órfã 20260524000001_mappings_last_sale_date (causava duplicate column em instalações novas)",
-  "pub_date": "2026-05-25T00:00:00Z",
+  "version": "1.0.16",
+  "notes": "Auto-recovery #2: limpa registros órfãos de _sqlx_migrations (corrige 'migration X was previously applied but is missing in the resolved migrations')",
+  "pub_date": "2026-05-26T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZxekZBamtkZk5sR0xqQjRBVTlNalg1dHYrekdDTVdtSFZRV1FLNzh6eWMzdlgxeWV3N0xQckpUVzVRZTFlaTJHZUxNL0RXWTR1dFlDZ1BEeVJGL2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzYzOTMwCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4xNV94NjQtc2V0dXAuZXhlCjVlYjNrWWcxSmJweTRSWjZWaFVhSEJOQnJad09yZXo5MGZBRHR0R1pLUW5wVy9meVZsRW55bHRyUTJlWlR6NXpzQTdzRG5QMzJRbUxzaFBCdnM1QkJBPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.15/Synx.Sistema_1.0.15_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHNhTVk2OE9aSVlyTkFYZVNyYnRHU0VVYUY1RTlKUk5sZXhRc0FhVjVhU2M5Q3Jjb3JwL3c5VjRMOTB1eEZrVytlUFIzR0trRzdKTDBaV3RJMHl1N1FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzY0NjIzCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4xNl94NjQtc2V0dXAuZXhlCnNrOGM5WTFUOTF2Qmk4ZURkQXF1bXVTUWk4VkRsNzhHakRRR3BMQWNiL2Z3bDBUdzdUdU1nbXFQVGxqRlMzMUYza2d4dC9pcW9raGwzQlJmNHJWM0RnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.16/Synx.Sistema_1.0.16_x64-setup.exe"
     }
   }
 }
