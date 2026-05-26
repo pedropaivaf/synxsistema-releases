@@ -1,11 +1,11 @@
 {
-  "version": "1.0.17",
-  "notes": "Eye API calibrada à doc oficial v1: dois headers (X-EYEMOBILE-ACCESS-KEY + SECRET-KEY) + URL /v1 + 4 campos no modal (Access, Secret, URL Base, Point ID) + structs shape real (Product/Transaction/TransactionItem)",
+  "version": "1.0.18",
+  "notes": "Margem real (revenda): last_sale_price_cents da Eye + polling 5min + botão Sincronizar agora. Demo → produção transição limpa via purge_demo_data automático ao salvar credenciais.",
   "pub_date": "2026-05-26T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHNHZFcyK3VTSFBjZ1FPWmllRTlKK2R5WUxOY2FFaWk5dmdQOEZpQ2twVVZZWlo5TE9wSVhWTm1icGdnVzdJaTk2M1ZJZGNmNkdET0RXcG5lUDduWEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Nzg5MzY4CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4xN194NjQtc2V0dXAuZXhlCkN4R2Zvb0wxU2FOMW1qNzN1b0RUVmRjNDFjYm5LUUJaUVpUV29uVXRCTW5OZnlwSEdnVzc1cE1oeVdNSGV2YmhKUVh1TjlMZzNzUG9LTmRoRGE3S0N3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.17/Synx.Sistema_1.0.17_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZXMFBkUGpNNFhIQ3hZcDM0ZXZVS0Jua3c2TUE0SGpJUjJ1RVpFbFlIUWM1QW43dEk5akRadkI4Z2tNOEplUE1ZSlR0cXMrMjBmVUdhZUl4MXFheUFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzkxMjAyCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4xOF94NjQtc2V0dXAuZXhlCnJZU3JMdVVXSHZ6Q2NNOFJvcWlOa0ptaWJXYTVOdkpJN2lpZEdGNGg0QTNmdldUYWVKbGNsUThQd0ZxSVp6VmZiMFgvck5qcUp4YVBTaXZNcmpKSUFnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.18/Synx.Sistema_1.0.18_x64-setup.exe"
     }
   }
 }
