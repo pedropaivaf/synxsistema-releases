@@ -1,11 +1,11 @@
 {
-  "version": "1.0.9",
-  "notes": "Filtro de período funcional + coluna 'Dias Parado' destacada + 'Data Entrada' separada",
-  "pub_date": "2026-05-24T00:00:00Z",
+  "version": "1.0.10",
+  "notes": "Paginação também no topo da tabela de alertas",
+  "pub_date": "2026-05-25T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG44OVFkVFRyTFJzUTFoS1puczhHRVQydWp1MkxXL2x0RHR3d0ljR25xdDQ0bDZBRFVMclowVXNoMmhFTTAvVVhXanlpTk9tY281cWJGVXpraWpRc3dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzQ3NjkwCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC45X3g2NC1zZXR1cC5leGUKVnNJQXRBMzZGWEswTG1FUFlGdVFjUkN2U3FmZUk3M1lGR0FqdEZ5OHk1M0daRFNzc28zbGlsUjIvSmxvM2k0VVp1ajMzYWVUU083T2VYVVNLVjJ1QWc9PQo=",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.9/Synx.Sistema_1.0.9_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZzZU9CYndIMnp2T3RKRXBHZVdXN1N5WHJPazNXMVFyUmNsQjRtNERLNkRRd3BrUTlyRDFJZy8zUVFSU2ZwMVZMLzFEaTlQdWJkUG52NFEzZUNqbEEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzU5MzE1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4xMF94NjQtc2V0dXAuZXhlCmswVEN6cElzbHp5NmREaVg0VG54ZWZ4MnE5cUpZQkNaSm80RGo3S0l3aXNVT1k5MVZWMVAvWnFSOC9FNnpudzlSZnI4N1JtZ2w0RlNBQXJZemcrcEJBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.10/Synx.Sistema_1.0.10_x64-setup.exe"
     }
   }
 }
