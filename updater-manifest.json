@@ -1,11 +1,11 @@
 {
-  "version": "1.0.16",
-  "notes": "Auto-recovery #2: limpa registros órfãos de _sqlx_migrations (corrige 'migration X was previously applied but is missing in the resolved migrations')",
+  "version": "1.0.17",
+  "notes": "Eye API calibrada à doc oficial v1: dois headers (X-EYEMOBILE-ACCESS-KEY + SECRET-KEY) + URL /v1 + 4 campos no modal (Access, Secret, URL Base, Point ID) + structs shape real (Product/Transaction/TransactionItem)",
   "pub_date": "2026-05-26T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHNhTVk2OE9aSVlyTkFYZVNyYnRHU0VVYUY1RTlKUk5sZXhRc0FhVjVhU2M5Q3Jjb3JwL3c5VjRMOTB1eEZrVytlUFIzR0trRzdKTDBaV3RJMHl1N1FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzY0NjIzCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4xNl94NjQtc2V0dXAuZXhlCnNrOGM5WTFUOTF2Qmk4ZURkQXF1bXVTUWk4VkRsNzhHakRRR3BMQWNiL2Z3bDBUdzdUdU1nbXFQVGxqRlMzMUYza2d4dC9pcW9raGwzQlJmNHJWM0RnPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.16/Synx.Sistema_1.0.16_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHNHZFcyK3VTSFBjZ1FPWmllRTlKK2R5WUxOY2FFaWk5dmdQOEZpQ2twVVZZWlo5TE9wSVhWTm1icGdnVzdJaTk2M1ZJZGNmNkdET0RXcG5lUDduWEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Nzg5MzY4CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4xN194NjQtc2V0dXAuZXhlCkN4R2Zvb0wxU2FOMW1qNzN1b0RUVmRjNDFjYm5LUUJaUVpUV29uVXRCTW5OZnlwSEdnVzc1cE1oeVdNSGV2YmhKUVh1TjlMZzNzUG9LTmRoRGE3S0N3PT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.17/Synx.Sistema_1.0.17_x64-setup.exe"
     }
   }
 }
