@@ -1,11 +1,11 @@
 {
-  "version": "1.0.11",
-  "notes": "Última Venda + filtro rigoroso de dias parado + cleanup demo ao configurar token Eye real + sync Supabase com last_sale_date",
+  "version": "1.0.12",
+  "notes": "Auto-recovery de migrations parciais (corrige erro 'duplicate column name last_sale_date')",
   "pub_date": "2026-05-25T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGdid3NtU0RKc3o2ZGlIWnhqSWJGamJUVVdzcVBVa2V6MXZhUGpvd2FTYU9wZm1vWWVWanMzeFVndFk0SytxR0t6SDNNWXRFcHlsYVMweWxiQlRlaHdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzYwMzMzCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4xMV94NjQtc2V0dXAuZXhlClJWRkFzRCtMSE1BbFJldjQzZHAyMElScnRRU2ZzOUY3S1lMUFJxT21CSjM0V2ZoVEdrdy83WFJQM2hwZ0cxN0hBVmduZ0lJOFROMkZLRkFvV0dwbkF3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.11/Synx.Sistema_1.0.11_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGxzSVNGOTVUMW9kcThFSE1COW81K3hnWUlPL0V4Tm9IT0xta1RkYmUvaVNYTDdNaFFrVitVMlI4bFJUcGFFcTNiWjMyWWZZNUNrd0d4dUVrTlhjSmcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzYwODIyCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4xMl94NjQtc2V0dXAuZXhlCjBkQmd1MHA3QW1IdkcvaUQrZGRMYlExUUZ2QTdJQk8zUEt6b0FJbDZwN3hNaVVGVEwwcS80N1hnYVVQSFJoZnVzZVFHZEx2YVNvZGJLYmIzMDMxQ0FBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.12/Synx.Sistema_1.0.12_x64-setup.exe"
     }
   }
 }
