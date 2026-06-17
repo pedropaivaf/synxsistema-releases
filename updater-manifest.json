@@ -1,11 +1,11 @@
 {
-  "version": "1.0.19",
-  "notes": "Auto-import produtos Eye + progress feedback ao vivo (modal não bloqueia mais)",
+  "version": "1.0.20",
+  "notes": "Fix sku null + usa default_price da Eye como preço de venda (margem já no 1º sync)",
   "pub_date": "2026-06-17T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHBPNS83WDcva2M0c3piNHQ1aFBJZUdEVytMNmluQ3V6VDZxOFc2cWxSRWlvclMycnBWMm9JYmZ6WnhUcFBQcnlIcHk2cGJIUFkrb2VHMktzMXBZM0FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzM3OTQxCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4xOV94NjQtc2V0dXAuZXhlCjVYK25NQzl2b3I1NXAvejlhVGZreDBLM1hqbVdjR1ZpaHIvd1JwQ1ZueTlrdHFWVmNqUitMemxqSFIxYTlDcnRweGY2SnVRdng3WklSU0xZWFE3VEJ3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.19/Synx.Sistema_1.0.19_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG5PMVNZV1VvV3FFdVRxOWtMNVFFNjNGV1dnRWY4Um9VeXdneHZGZHcrOUlBZ3JwUUdjb3h6U24wSGFuWm1kaDZrVGVxMDQvdk1oM21CL2ROUm5KSHdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzM4NTE5CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4yMF94NjQtc2V0dXAuZXhlCmVTZFJyd0IzQnR5dEozYlVnNWlKbUh3d2hHSmVMMzVxNFI4aEtkL1I1V2I0akdHN2hrNnA0WXJEb3JqZTJ3T0EyQm1qMzkvTzdqZTVLNS9WSlFDZ0FnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.20/Synx.Sistema_1.0.20_x64-setup.exe"
     }
   }
 }
