@@ -1,11 +1,11 @@
 {
-  "version": "1.0.20",
-  "notes": "Fix sku null + usa default_price da Eye como preço de venda (margem já no 1º sync)",
+  "version": "1.0.21",
+  "notes": "Sync 100x mais rápido: items vêm inline em /transactions (sem N+1). Barra animada + stats auto-refresh.",
   "pub_date": "2026-06-17T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG5PMVNZV1VvV3FFdVRxOWtMNVFFNjNGV1dnRWY4Um9VeXdneHZGZHcrOUlBZ3JwUUdjb3h6U24wSGFuWm1kaDZrVGVxMDQvdk1oM21CL2ROUm5KSHdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzM4NTE5CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4yMF94NjQtc2V0dXAuZXhlCmVTZFJyd0IzQnR5dEozYlVnNWlKbUh3d2hHSmVMMzVxNFI4aEtkL1I1V2I0akdHN2hrNnA0WXJEb3JqZTJ3T0EyQm1qMzkvTzdqZTVLNS9WSlFDZ0FnPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.20/Synx.Sistema_1.0.20_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGw3VWVwWEpNVDdQaytxbFdiYk0zRzF0NUJRSnVDUVA3NnZCNE5yekFRQlA1bUs0S1VSZWZSTXZsMUpPRTBZT05tWlRHN0FISGNLN0U5MHNjYThYVXdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzM5MTM0CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4yMV94NjQtc2V0dXAuZXhlCmlkbWFBRmVCckZ4aUMwUi9kNUFjM2NxTTF3U0o4Q1o4TWFqQlJUN1VhMVdRUG9xeGxnRk5uRHc4bmkvOWxmQ3RSN3lMYUhmN0ZPOVZ6OEpTZXdaSER3PT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.21/Synx.Sistema_1.0.21_x64-setup.exe"
     }
   }
 }
