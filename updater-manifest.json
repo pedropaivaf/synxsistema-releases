@@ -1,11 +1,11 @@
 {
-  "version": "1.0.22",
-  "notes": "Nova aba Catálogo (Vitrine + Alertas) com grid dos 449 produtos da Eye, perfil fiscal real puxado das vendas (CST/NCM/CFOP), e 'Aguardando NF-e' em vez de R$ 0,00 quando custo não foi importado.",
+  "version": "1.0.23",
+  "notes": "Alertas instantâneo: cache em memória dos 449 produtos Eye (TTL 5min). Vitrine reaproveita cache. Fix de imagem: respeita URL completa retornada pela Eye.",
   "pub_date": "2026-06-17T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGd5VXBOQlMzaHhyRUs1VFY5ek9wTU91ZHBuVTNXMThydXZpOElPbzY5VFpTM05NNFRrUmhuRFRNNU9henhvZ3ZpUmNVV1p3bzEyZHdyWWx1MjF5ZUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzQxNTE1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4yMl94NjQtc2V0dXAuZXhlCnVEUXNYUFc5WWd5OCswM0dWeVIxTTB2T3Bka2pMOEh1d2V2b2JvMmFmNFhxTHkyZ0Z1L3NscXRoeFFsOGZnVTVXTlZGc0wrd0RleWJROHRHWmlIekFnPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.22/Synx.Sistema_1.0.22_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHR0Zloyb1NmN1NwakZFK3J2bGM5am9yRlFmVFBUaTJ5cGMwYlE4STM4dmNlSWt2QnVSS0p1WHR3a043YUxIV3JzdVN2aWdWb3J1T0d4elF4WFR3bWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzQyMzkzCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4yM194NjQtc2V0dXAuZXhlCjRJZWRnTHRuQWhUaExYNGRNV2RSYkdNSktMdjM2UFhPbC9PYUswdVVDK20yZVZuOEJ1MENLaUFzeEdva2xOOXdJN1IvaVI4ejRhMlFQcDdkeVR2UUN3PT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.23/Synx.Sistema_1.0.23_x64-setup.exe"
     }
   }
 }
