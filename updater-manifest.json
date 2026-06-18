@@ -1,11 +1,11 @@
 {
-  "version": "1.0.24",
-  "notes": "Alertas instantâneo (cache de orders 30d serve 7/15/30d). Fotos da Eye em Alertas e Vitrine (removido Unsplash). Diagnóstico de imagens da Eye.",
+  "version": "1.0.27",
+  "notes": "Dashboard instantâneo (cache em disco). Toggle do backup verde + layout fix. Polling 5min agora mescla orders no disco e recalcula stats em background.",
   "pub_date": "2026-06-17T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG9aeFNVSno5Y0l2RURTQUVFeWRXUTQrdFRGUUFwWEJjS2pJelc0Nityd0tNRGIzSVR0bzUwT2VyU2pqUml5TXNUUHVxZGFFUWM1aHNZRGJXZWZ6MUFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzQ0MDQ0CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4yNF94NjQtc2V0dXAuZXhlClhEaHhaSWsvaVZyMGNoZHJTV1lxZ1dWUUZuZHUrNE56OTNrRTU4YkpQMzNLR1JVbW9vTk9EMFF2Y1NweVVOb3Q4WW1SRS9td1hPSUdKeHhXS3dtS0N3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.24/Synx.Sistema_1.0.24_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGdRS3h3c3UrS2JhZ1EvUmViSkpVMklxb2JVTXI1Y3JTRXFFdFlJSWlNRUU4UUtIOEpoZU92NmZZaGp4aVg1TmUwMFlXNzlaelUyaWZNVVpJcUt5Rmc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNzUwOTM5CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4yN194NjQtc2V0dXAuZXhlCkdoK3dVczFEK3NPQmxzK2hHUGkvMFd0UHBhUFlta3BQZS8vbWI4d1lmSk1KTVROOWhzcnZrUmpXdkVkbElQYkszUk0xNlRjQTErZnRzOWEzZDhIVkFRPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.27/Synx.Sistema_1.0.27_x64-setup.exe"
     }
   }
 }
