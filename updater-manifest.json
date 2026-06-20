@@ -1,11 +1,11 @@
 {
-  "version": "1.0.39",
-  "notes": "Hotfix: admin sem tenant_id (pedromasterchif@gmail.com) não trava mais em 'Verificando licença…'. Login admin agora vai direto pra aba Admin sem precisar de pseudo-tenant. Cliente normal não é afetado.",
+  "version": "1.0.40",
+  "notes": "Hotfix: build.rs embute VITE_SUPABASE_* no binário em produção (antes só funcionava em dev). Painel Admin agora consegue chamar RPCs Supabase. Blindagem extra: cliente offline com cache 'active' mas sem period_end mantém status Active (não regride pra Unknown). Cliente comum não é afetado.",
   "pub_date": "2026-06-20T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGtwOU9KczNiUnRWVzQxNDN5eGIyK1VHc2lDY21Wa05qdlVOaXlwVXJDK2JoMG5EVFhUMnk4Qk0yUFlSNWxCWUd2czBIZm9laVYvaXNxb3RpdHNUc1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTg5MDM2CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4zOV94NjQtc2V0dXAuZXhlCnozV250SFVOem1MYkZ2QUpGMHZpSkI0TTZla3VPeTAzUld2eHFadnVISTRvODVJT2lhNXFxLzdkK1dvMThJQjdRY0lTV0hkK09DTkdhWGx4TjQ2NUR3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.39/Synx.Sistema_1.0.39_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG01dFg5YmpDZkQ5UC9TWGZXR3FGMWwvK1BTR2RPL2MyVHlRNGlGalJNdjl0dlRQMEtZeTRBbnVJMXVadHdoME5DUU5KNzhJSmFUZStnVWRlSTNNQndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTkwMjIzCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40MF94NjQtc2V0dXAuZXhlCi95NFI5QWhHTHZidFJNakdkY2lOSXpYdlhTOUhlU1hvSVFiMlRHTVpTdDhQakk4cDZWNEMyTnFBUWNtSWtsaStDNmp5ZjgzaHdyS3BjSHMwZDU0YUFnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.40/Synx.Sistema_1.0.40_x64-setup.exe"
     }
   }
 }
