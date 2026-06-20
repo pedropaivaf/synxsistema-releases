@@ -1,11 +1,11 @@
 {
-  "version": "1.0.37",
-  "notes": "Dashboard BI completo: KPIs clicáveis (Vitrine/Alertas/Notas/Pendências), Tendência D/S/M com tooltip, Vendas por Categoria REAIS da Eye com fotos via CDN. Fix 429 + cache 180d + margem ponderada + cutoff 30d + CSOSN. Fonte Segoe global + layout estático. 33 testes.",
+  "version": "1.0.38",
+  "notes": "Sistema completo de assinaturas: 5 status (active/expired/frozen/cancelled/blocked), pg_cron diário pra renovação automática + expiração, Painel Admin dentro do app (visível só pro admin) com criar/renovar/congelar/descongelar/cancelar/bloquear/reativar/editar/excluir/audit. Segurança em 5 camadas com SECURITY DEFINER. 35 testes lib + 4 main.",
   "pub_date": "2026-06-20T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG9peVJHdlI2Q2Y0Y2VEV25iQ2RFamZYMXF2aGpOcTNEb25HOWV0cVdLT1FtODJmdVRNbjFlWHhUYk9URkhPVTd2bUpDU2dkeEJpekFvV3dsclhCREFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTgxODQ4CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4zN194NjQtc2V0dXAuZXhlCldTbm0vOXYyUmtmbWJmVWhGYnVBT3pZY3h6Tm0yUlpXaFNTZlA3WUhkdmlidXNSYTJLUWE2Wi9ZRUdSa2dLbWlrV3FraXVqRVl0dDFSUUg5L1JxVEJRPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.37/Synx.Sistema_1.0.37_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGtLTlJSbElCMXZzNWxIOTZZVEtHU1N0T202Mk9EeWVHVXVDcm5DWDhvbDlFRkNGdDZjZm81QXJJMW1HZWprdU9ZOTZpT3Z2Y3dPRXVCRERoRzRqL3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTg1NTgxCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC4zOF94NjQtc2V0dXAuZXhlCjJmMEpSK2pmb3EyeEQ4VGZESEF6NXprTGtCNEZaRWNjeDVlbmN3ckFKUGd1YXFEakMweDNxd0RqdFA1MFByU2FuWG9tUUduQlVHQWJib2x3RmVONENRPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.38/Synx.Sistema_1.0.38_x64-setup.exe"
     }
   }
 }
