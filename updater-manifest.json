@@ -1,11 +1,11 @@
 {
-  "version": "1.0.41",
-  "notes": "Painel Admin reformulado: legenda discreta dos 5 estados no topo, status vira dropdown clicável com ações contextuais (substitui os 6 botões por linha), toast rico com ícone+título+descrição+detalhes técnicos em erro. Fix: período mostra 'dd/mm → dd/mm' em vez de '— → dd/mm'. Cliente comum não é afetado.",
+  "version": "1.0.42",
+  "notes": "Painel Admin polido: modal de confirmação centrado (substitui o feio tauri.localhost diz), idempotência (toast amber 'Ação já aplicada' em vez de chamar RPC à toa), Reativar +30d disponível também pra status Congelada com Descongelar mantendo dias preservados. Cliente comum não é afetado.",
   "pub_date": "2026-06-20T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHJSU0lUY3hQTlJkamZkdktGZTZGTEYrYkRDbk9DcVBmYytWYTdwWW9kWjN2L0tMWFlkdHlNQVArL2pxMmsvRjZjTUptUUtuNWxSa2FsbWVwM3VyNmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTk1MTE3CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40MV94NjQtc2V0dXAuZXhlCnZzOVErZ0NBMVQ2SWphcldscjNnZWVVb3VtdTFsVE1rSHR0VXJwMkprcGoySHY0TjBQbkxlZ2RtN0ppeFh5YzJkTW12T3AraFRGOXRJRG5rR3hyaUFBPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.41/Synx.Sistema_1.0.41_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG5KWHlTb1Blc3ZwNktUZDJvSis5UWhodDhiSW1KNkxtZmlsR1k1ak9SeVNnK3p5cUFGb0V3S1dnakcra0JYZS9nY3FVdHZrVDkzSTVHQm0yTVhRNkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTk2NjYwCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40Ml94NjQtc2V0dXAuZXhlCklxWFVKUnpsNlNFUm9tMEhhZzhWcTBtR3I4WllOUlE4NzMraFcxQk1pbUJzS3BZem5Ia3J6V1lDTDJVWUJBTzhqT05FZGdUZWxjUW1QbjhhVTFlK0JBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.42/Synx.Sistema_1.0.42_x64-setup.exe"
     }
   }
 }
