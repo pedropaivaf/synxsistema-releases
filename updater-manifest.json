@@ -1,11 +1,11 @@
 {
-  "version": "1.0.46",
-  "notes": "Hotfix: zerar custo na sub-aba Custos agora limpa cost_source (volta a '—'). Antes ficava 'Manual' com valor R$ 0,00. Cliente comum não é afetado. 66 testes verdes.",
+  "version": "1.0.47",
+  "notes": "Hotfix v1.0.45 residual: migration limpa cost_source='manual' em produtos com custo=0 (estado corrompido pré-v1.0.46). + Input com máscara BRL no Catálogo→Custos: digite só números, sistema formata como centavos em tempo real (1234 → R$ 12,34). 63 testes verdes.",
   "pub_date": "2026-06-20T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHBwWW1OTXVqOC9nSGM1bXB4c2RXUDltaldlTVlSWGdTT3pzWjhzNzZFYmhoTUFMSGJSMUVGcjF0dmNsOHFjcFExbE04UExJNTVOVnVlc2w2azhtd3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDU2Njc4CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40Nl94NjQtc2V0dXAuZXhlCmZ1c3dyb3dzSGhBSFhNMnpIcm1DSGN3MjJRR0hhTHZvby9vRFlWRHhJcFpWZ1JYNitZa2tXSG9TUWlEcFpoaS9tU1dKYlpKMkErRUhEekwwNHhzN0RBPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.46/Synx.Sistema_1.0.46_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHVBWnFzZEF1OGcxeWQ2dVdDZ1NjNkFick4xYVJBZjNkRmY2OGl4NEw5RndzaW1BeHNxbVZibThNMUU3VkRRc0lyN2ZHbTIyckpKZGVjOUMzZmpEV0FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDU3MzMxCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40N194NjQtc2V0dXAuZXhlCitEK1BrN0xqd0hUaW1uWW9CK0ZiaDJxcG5PemhlRmRNVlQ1L2JwS0FMWGZ5bERJTVVQQ3hycEpGVWUrTW5rOTdLNzJSRTh2MWVTTXNkb0x4eWVmTUF3PT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.47/Synx.Sistema_1.0.47_x64-setup.exe"
     }
   }
 }
