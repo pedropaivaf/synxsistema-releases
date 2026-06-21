@@ -1,11 +1,11 @@
 {
-  "version": "1.0.45",
-  "notes": "Sub-aba Custos no Catálogo: tabela editável inline de last_price_paid (449 produtos). Margem recalcula em tempo real. Audit history por produto (CostHistoryModal). Cobertura% no header. Cliente comum não é afetado.",
+  "version": "1.0.46",
+  "notes": "Hotfix: zerar custo na sub-aba Custos agora limpa cost_source (volta a '—'). Antes ficava 'Manual' com valor R$ 0,00. Cliente comum não é afetado. 66 testes verdes.",
   "pub_date": "2026-06-20T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG5JdkVGdm81R1lKQW4zYis2TENUbEpGb3ZIWjFOYmtiVTY4YlpWUVVKU0IyM0RxM0pxWXIxNjAydDlBR1phZ29QYUE2U3YwQzVWeG5ZK3dqSXgwZndvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDU2MTE1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40NV94NjQtc2V0dXAuZXhlCmdicXl5RUl1SDJmUXd0akk3NkhkUkp6QzNSd1lwY0dxUlBTVDMyZ00zOGs0K0ZBSGhjM0xzSXE3aEF1QkhXeXNMRHEvZlVLQnBESnY1cHlZKzl5ekFnPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.45/Synx.Sistema_1.0.45_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHBwWW1OTXVqOC9nSGM1bXB4c2RXUDltaldlTVlSWGdTT3pzWjhzNzZFYmhoTUFMSGJSMUVGcjF0dmNsOHFjcFExbE04UExJNTVOVnVlc2w2azhtd3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDU2Njc4CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40Nl94NjQtc2V0dXAuZXhlCmZ1c3dyb3dzSGhBSFhNMnpIcm1DSGN3MjJRR0hhTHZvby9vRFlWRHhJcFpWZ1JYNitZa2tXSG9TUWlEcFpoaS9tU1dKYlpKMkErRUhEekwwNHhzN0RBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.46/Synx.Sistema_1.0.46_x64-setup.exe"
     }
   }
 }
