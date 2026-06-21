@@ -1,11 +1,11 @@
 {
-  "version": "1.0.44",
-  "notes": "Sistema fiscal completo: badges granulares com label técnico + % (CSOSN 102 · 7%, CSOSN 500 · 0%, CST 00 · 22,25% etc), inferência por NCM quando Eye envia null, override manual via Catálogo→Fiscal, doc canônica em docs/fiscal-engine.md. Cliente comum vê tributação correta de cada produto sem ambiguidade.",
+  "version": "1.0.45",
+  "notes": "Sub-aba Custos no Catálogo: tabela editável inline de last_price_paid (449 produtos). Margem recalcula em tempo real. Audit history por produto (CostHistoryModal). Cobertura% no header. Cliente comum não é afetado.",
   "pub_date": "2026-06-20T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHU2NGphRllST0UrVktyZFAxRFpnakFtK2dNQVI3aVYrZFlDZUVTdXQwbnR1NCtGckRKd1BTTU5TRUZpaUZ4c0ZCNi9JL3RPZVFKODZoNlluR3hnTkE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDAyOTY1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40NF94NjQtc2V0dXAuZXhlCmtTaElEMTVwNWxYemVWVG9UNG9QWU1CQ3ZPR21yUGJ0d2prVDExbjhWMnhVYjFsWXZwQWQxYWZJTlZWbHR2MjhZM1ZMZlhWV0Y3T2dyUVdVRVgvTEJ3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.44/Synx.Sistema_1.0.44_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG5JdkVGdm81R1lKQW4zYis2TENUbEpGb3ZIWjFOYmtiVTY4YlpWUVVKU0IyM0RxM0pxWXIxNjAydDlBR1phZ29QYUE2U3YwQzVWeG5ZK3dqSXgwZndvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDU2MTE1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40NV94NjQtc2V0dXAuZXhlCmdicXl5RUl1SDJmUXd0akk3NkhkUkp6QzNSd1lwY0dxUlBTVDMyZ00zOGs0K0ZBSGhjM0xzSXE3aEF1QkhXeXNMRHEvZlVLQnBESnY1cHlZKzl5ekFnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.45/Synx.Sistema_1.0.45_x64-setup.exe"
     }
   }
 }
