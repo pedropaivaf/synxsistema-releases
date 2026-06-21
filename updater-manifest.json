@@ -1,11 +1,11 @@
 {
-  "version": "1.0.43",
-  "notes": "Hotfix: state leak entre logins (logar como admin depois como cliente comum mantinha view='admin' e mostrava 'Acesso negado'). Agora redireciona automático pra Dashboard quando usuário não-admin tem view='admin'. Cliente comum não é afetado.",
+  "version": "1.0.44",
+  "notes": "Sistema fiscal completo: badges granulares com label técnico + % (CSOSN 102 · 7%, CSOSN 500 · 0%, CST 00 · 22,25% etc), inferência por NCM quando Eye envia null, override manual via Catálogo→Fiscal, doc canônica em docs/fiscal-engine.md. Cliente comum vê tributação correta de cada produto sem ambiguidade.",
   "pub_date": "2026-06-20T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHV1NGRsdUg4V1IvOXYwbERpcmQwOVF3Zno3TjBJbzRMeTZub2RkZ2VtZmtmUWJIRjloaFdBaWVwTHUvWHBIM2hUamMwaWJzcE1LNXU2dndSdjJpNlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDAwMTYzCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40M194NjQtc2V0dXAuZXhlCkVlblFUblJMcGNYaHA0RlM3OFAzSkRZWDNpVldHa0VpUXB3RWZ6ekZYazlUTUhsRm95ZTRJaGNMSE5PaXA4dUFiSnFWdUZnTjZNWWNVT3VUSTRXQ0NRPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.43/Synx.Sistema_1.0.43_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHU2NGphRllST0UrVktyZFAxRFpnakFtK2dNQVI3aVYrZFlDZUVTdXQwbnR1NCtGckRKd1BTTU5TRUZpaUZ4c0ZCNi9JL3RPZVFKODZoNlluR3hnTkE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDAyOTY1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40NF94NjQtc2V0dXAuZXhlCmtTaElEMTVwNWxYemVWVG9UNG9QWU1CQ3ZPR21yUGJ0d2prVDExbjhWMnhVYjFsWXZwQWQxYWZJTlZWbHR2MjhZM1ZMZlhWV0Y3T2dyUVdVRVgvTEJ3PT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.44/Synx.Sistema_1.0.44_x64-setup.exe"
     }
   }
 }
