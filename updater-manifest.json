@@ -1,11 +1,11 @@
 {
-  "version": "1.0.42",
-  "notes": "Painel Admin polido: modal de confirmação centrado (substitui o feio tauri.localhost diz), idempotência (toast amber 'Ação já aplicada' em vez de chamar RPC à toa), Reativar +30d disponível também pra status Congelada com Descongelar mantendo dias preservados. Cliente comum não é afetado.",
+  "version": "1.0.43",
+  "notes": "Hotfix: state leak entre logins (logar como admin depois como cliente comum mantinha view='admin' e mostrava 'Acesso negado'). Agora redireciona automático pra Dashboard quando usuário não-admin tem view='admin'. Cliente comum não é afetado.",
   "pub_date": "2026-06-20T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG5KWHlTb1Blc3ZwNktUZDJvSis5UWhodDhiSW1KNkxtZmlsR1k1ak9SeVNnK3p5cUFGb0V3S1dnakcra0JYZS9nY3FVdHZrVDkzSTVHQm0yTVhRNkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxOTk2NjYwCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40Ml94NjQtc2V0dXAuZXhlCklxWFVKUnpsNlNFUm9tMEhhZzhWcTBtR3I4WllOUlE4NzMraFcxQk1pbUJzS3BZem5Ia3J6V1lDTDJVWUJBTzhqT05FZGdUZWxjUW1QbjhhVTFlK0JBPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.42/Synx.Sistema_1.0.42_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHV1NGRsdUg4V1IvOXYwbERpcmQwOVF3Zno3TjBJbzRMeTZub2RkZ2VtZmtmUWJIRjloaFdBaWVwTHUvWHBIM2hUamMwaWJzcE1LNXU2dndSdjJpNlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDAwMTYzCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40M194NjQtc2V0dXAuZXhlCkVlblFUblJMcGNYaHA0RlM3OFAzSkRZWDNpVldHa0VpUXB3RWZ6ekZYazlUTUhsRm95ZTRJaGNMSE5PaXA4dUFiSnFWdUZnTjZNWWNVT3VUSTRXQ0NRPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.43/Synx.Sistema_1.0.43_x64-setup.exe"
     }
   }
 }
