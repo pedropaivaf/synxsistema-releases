@@ -1,11 +1,11 @@
 {
-  "version": "1.0.55",
-  "notes": "Rate limit Eye API resolvido: send_with_429_retry com Retry-After parsing + backoff exponencial (max 60s, 3 retries) + PARALLEL_BATCH 5→3 + cooldown 100ms entre lotes. Sem mais erro vermelho 'HTTP 429 Too Many Requests'. + Snapshot mensal automático de DashboardStats (KPIs+top10+tendências) em retaguarda DUPLA: SQLite local cifrado (sempre escrito) + Supabase nuvem (replicado quando online; retry no loop 30min se offline). Retenção 5 anos garantida. 82 lib + 4 main = 86 testes. ⚠️ Aplicar supabase/migrations/05_dashboard_snapshots.sql no SQL Editor do Supabase pra ativar cloud backup.",
+  "version": "1.0.56",
+  "notes": "Feature flags por tenant: admin pode habilitar/desabilitar abas (Dashboard, Importar NF-e, Vitrine, Alertas, Custos, Fiscal) por cliente via novo modal 'Features' no Painel Admin. Default vazio = tudo on (backward compat). Cliente precisa relogar pra ver mudanças. + Keep-alive cron no Supabase Free (anti auto-pause após 7 dias inativo). 86 testes verdes. ⚠️ Aplicar supabase/migrations/06_tenant_features.sql no SQL Editor do Supabase.",
   "pub_date": "2026-06-22T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG9tWkIxM2FMWG5MK2krMTFaWWhyMFV3UzRNaEV1VzM5OFhqaktaOUdPMHkrS21OVFk3UjJRQnd1MVJlTHo1ZlpaTis2ZVk3K21ZYzdHWHhYUHk1cmc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTY0MTAxCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41NV94NjQtc2V0dXAuZXhlCmtKQklyVDBpRlkwSWc4Z0hQVURHUzlnZEVPMnZsUDhRVVFpVlFxVnk4VEJrNjNSQTkwN3AvTGJPZ1h3cmo3MSs4b3dzaFdwTXEvZkJCanFtTXJUU0NBPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.55/Synx.Sistema_1.0.55_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGhVaWMxam9aNVlQY3JJckc5QUVISWl5NlZGNUt4bmI1YnpQdzNtQm1KSnlqZXFEdTJXNzU4QmdaRzY3Q0I0VWE0NFhhUjVRdTNjeEY5cG54Wlo1WVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTY3NTUwCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41Nl94NjQtc2V0dXAuZXhlCjV4eFVPSzBSeDJNYzRscVFuRWN3SEtLL2RoQUtPeittZ2FYZEsweDY0alNsaUNHblllZlEwK1MxdXpMbkZxTUNyVFoxTWtwbDN4ajFXWUI1OHVRRkNBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.56/Synx.Sistema_1.0.56_x64-setup.exe"
     }
   }
 }
