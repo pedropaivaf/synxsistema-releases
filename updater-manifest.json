@@ -1,11 +1,11 @@
 {
-  "version": "1.0.54",
-  "notes": "Fix UX: 'Definir CST' agora pré-seleciona automaticamente o CST aplicado ao produto (cobre CSOSN inferido por NCM, como bebidas 2202-2208 = CSOSN 500). Sem isso, o modal abria sem nenhum radio marcado e usuário não sabia qual CST estava ativo. Novo: docs/system-flows.md — bíblia técnica com 26 fluxos end-to-end do sistema (ação → consequência).",
+  "version": "1.0.55",
+  "notes": "Rate limit Eye API resolvido: send_with_429_retry com Retry-After parsing + backoff exponencial (max 60s, 3 retries) + PARALLEL_BATCH 5→3 + cooldown 100ms entre lotes. Sem mais erro vermelho 'HTTP 429 Too Many Requests'. + Snapshot mensal automático de DashboardStats (KPIs+top10+tendências) em retaguarda DUPLA: SQLite local cifrado (sempre escrito) + Supabase nuvem (replicado quando online; retry no loop 30min se offline). Retenção 5 anos garantida. 82 lib + 4 main = 86 testes. ⚠️ Aplicar supabase/migrations/05_dashboard_snapshots.sql no SQL Editor do Supabase pra ativar cloud backup.",
   "pub_date": "2026-06-22T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGxISVE0bEtIdG9KVDc5TC9PZUJ5NitOQXhveTVna1lkTnZncjZjbFQzeHZ6OFgrNURtZzh6bmVhblg4bHh6MC9GQjkydzA5THM1TnpsZ2tVem0vZmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTQxOTIwCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41NF94NjQtc2V0dXAuZXhlCk40TWUvcHlGcm9GQWNZR3J3SXVqVjN4VGtEY0oyRk9WQjhrRDFHWFkxUDB0WnR3UVJaN3JVOHFMNnlXM0NUTitZS2p1L1BDb2gvY0E4ZEtNMVhnNEFRPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.54/Synx.Sistema_1.0.54_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG9tWkIxM2FMWG5MK2krMTFaWWhyMFV3UzRNaEV1VzM5OFhqaktaOUdPMHkrS21OVFk3UjJRQnd1MVJlTHo1ZlpaTis2ZVk3K21ZYzdHWHhYUHk1cmc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTY0MTAxCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41NV94NjQtc2V0dXAuZXhlCmtKQklyVDBpRlkwSWc4Z0hQVURHUzlnZEVPMnZsUDhRVVFpVlFxVnk4VEJrNjNSQTkwN3AvTGJPZ1h3cmo3MSs4b3dzaFdwTXEvZkJCanFtTXJUU0NBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.55/Synx.Sistema_1.0.55_x64-setup.exe"
     }
   }
 }
