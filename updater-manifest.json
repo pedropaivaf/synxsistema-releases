@@ -1,11 +1,11 @@
 {
-  "version": "1.0.47",
-  "notes": "Hotfix v1.0.45 residual: migration limpa cost_source='manual' em produtos com custo=0 (estado corrompido pré-v1.0.46). + Input com máscara BRL no Catálogo→Custos: digite só números, sistema formata como centavos em tempo real (1234 → R$ 12,34). 63 testes verdes.",
+  "version": "1.0.48",
+  "notes": "Triple-fix: Tendência Diária TZ-aware (não mostra mais R$ 0,00 pra 'hoje' à noite); sync mostra mensagem clara + outras abas refrescam sozinhas; MappingResolver diff-aware com checkbox por linha + bulk + modal de resumo + audit history pra NF-e. + Banners de transparência sobre limitação Eye. 68 lib + 4 main = 72 testes.",
   "pub_date": "2026-06-20T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHVBWnFzZEF1OGcxeWQ2dVdDZ1NjNkFick4xYVJBZjNkRmY2OGl4NEw5RndzaW1BeHNxbVZibThNMUU3VkRRc0lyN2ZHbTIyckpKZGVjOUMzZmpEV0FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDU3MzMxCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40N194NjQtc2V0dXAuZXhlCitEK1BrN0xqd0hUaW1uWW9CK0ZiaDJxcG5PemhlRmRNVlQ1L2JwS0FMWGZ5bERJTVVQQ3hycEpGVWUrTW5rOTdLNzJSRTh2MWVTTXNkb0x4eWVmTUF3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.47/Synx.Sistema_1.0.47_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGo3TFl0VEpxM0FUWk5tN2lIdFlCcWxEQXozNmUrTS9pb0JVSGZrMCtBU1Z2WEhnRDRxZVJaNllrclU0dy9TUEc1MDNwUEhrRlFxYk1JUklGT3piT1FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDkzNDI1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40OF94NjQtc2V0dXAuZXhlClU4SVlnTXFCcThvQ2svNnRmanNZRXhIRWhvK2tyMEhwRkNnOFFhdExuMHZxZDRYbmFITkpRSURrcURIRTlSZ295WXhBTVl1cU5tZGxpVkFJZm5iRkJnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.48/Synx.Sistema_1.0.48_x64-setup.exe"
     }
   }
 }
