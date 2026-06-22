@@ -1,11 +1,11 @@
 {
-  "version": "1.0.53",
-  "notes": "TIER 2 hotfix: RFC3339 hardening na licença (loga + valida ao gravar, sem mascarar licença válida como expirada); mutex em force_eye_sync (duplo-click no botão Sincronizar agora não dispara 2 syncs paralelos); pre-flight HEAD /points nas credenciais Eye (diferencia 401/403 de erro de rede); admin_delete_tenant agora atômico via BEGIN/EXCEPTION (rollback automático se qualquer DELETE falha). 81 testes verdes (+3 novos).",
+  "version": "1.0.54",
+  "notes": "Fix UX: 'Definir CST' agora pré-seleciona automaticamente o CST aplicado ao produto (cobre CSOSN inferido por NCM, como bebidas 2202-2208 = CSOSN 500). Sem isso, o modal abria sem nenhum radio marcado e usuário não sabia qual CST estava ativo. Novo: docs/system-flows.md — bíblia técnica com 26 fluxos end-to-end do sistema (ação → consequência).",
   "pub_date": "2026-06-22T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG1kZm1YUG1RallxdVBHUnR2REYvQ2tkY0VRNmdoRGpiK2kySXBNVHgvVTFBQlpya09XYS9RbFpqaUdtNXRQbTFueEp4ZHhtcWE4MjRhYko2ZGNZVUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTQwODkzCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41M194NjQtc2V0dXAuZXhlCmRzczJRSmJuaWdCcm9VSHd5d1JvZjVRZy81ZEJIYXJ2L3UyZ1krRHNxZjVzdzRZek42KzRaaGZqUDlDVHpncTUxejFFeFVNYmdxTjJPZGozYlRMSEJBPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.53/Synx.Sistema_1.0.53_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGxISVE0bEtIdG9KVDc5TC9PZUJ5NitOQXhveTVna1lkTnZncjZjbFQzeHZ6OFgrNURtZzh6bmVhblg4bHh6MC9GQjkydzA5THM1TnpsZ2tVem0vZmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTQxOTIwCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41NF94NjQtc2V0dXAuZXhlCk40TWUvcHlGcm9GQWNZR3J3SXVqVjN4VGtEY0oyRk9WQjhrRDFHWFkxUDB0WnR3UVJaN3JVOHFMNnlXM0NUTitZS2p1L1BDb2gvY0E4ZEtNMVhnNEFRPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.54/Synx.Sistema_1.0.54_x64-setup.exe"
     }
   }
 }
