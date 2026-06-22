@@ -1,11 +1,11 @@
 {
-  "version": "1.0.48",
-  "notes": "Triple-fix: Tendência Diária TZ-aware (não mostra mais R$ 0,00 pra 'hoje' à noite); sync mostra mensagem clara + outras abas refrescam sozinhas; MappingResolver diff-aware com checkbox por linha + bulk + modal de resumo + audit history pra NF-e. + Banners de transparência sobre limitação Eye. 68 lib + 4 main = 72 testes.",
-  "pub_date": "2026-06-20T00:00:00Z",
+  "version": "1.0.49",
+  "notes": "Faturamento 30d agora bate centavo a centavo com o relatório da Eye (cutoffs TZ-aware completos, BRT civil). Card 'Vendas por Categoria' redesenhado: barras ranqueadas + 4 mini-cards de insight (Líder/Top 3/Mix/Destaque), sem espaço vazio. Top 10 colorido com gradiente verde por rank + chip de categoria. Labels da Tendência (Semanal/Mensal) sem corte. 75 testes verdes.",
+  "pub_date": "2026-06-21T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGo3TFl0VEpxM0FUWk5tN2lIdFlCcWxEQXozNmUrTS9pb0JVSGZrMCtBU1Z2WEhnRDRxZVJaNllrclU0dy9TUEc1MDNwUEhrRlFxYk1JUklGT3piT1FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDkzNDI1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40OF94NjQtc2V0dXAuZXhlClU4SVlnTXFCcThvQ2svNnRmanNZRXhIRWhvK2tyMEhwRkNnOFFhdExuMHZxZDRYbmFITkpRSURrcURIRTlSZ295WXhBTVl1cU5tZGxpVkFJZm5iRkJnPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.48/Synx.Sistema_1.0.48_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG92cWNBS3Q4c0F2TUhhN1BURlFoWEwrMnpoSThaZExUZXFzVW1QWkY3MjZMSnhhSC9wRVVzRGFpbWMxR1VRODlnVW0rbmtxck03ZlhXeThHMTRhMFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDk2MTg1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC40OV94NjQtc2V0dXAuZXhlCnh1Z3p5TXZOZXR1cWd4Wm1pcnA3b0pZK2hEdlF1cGhIbG40cXZvMXRiM2FlbTRaTExjNkptRkVlOWJwVkljZzg4Mmd2czY0OCtHMjVDYmNFNEFWQkJ3PT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.49/Synx.Sistema_1.0.49_x64-setup.exe"
     }
   }
 }
