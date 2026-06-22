@@ -1,11 +1,11 @@
 {
-  "version": "1.0.50",
-  "notes": "Card 'Vendas por Categoria' agora tem mesma altura do Top 10 Produtos com scroll interno quando passa de 10 categorias. Insights enxutos: 2 cards (LÍDER com produto destaque embutido + CONCENTRAÇÃO Top 3 com nomes das categorias). Sem espaço vazio, sem cards redundantes.",
-  "pub_date": "2026-06-21T00:00:00Z",
+  "version": "1.0.51",
+  "notes": "Reordenação: Vendas por Categoria à esquerda (col-span-3) + Top 10 Produtos à direita (col-span-2). Divisor sutil entre os dois.",
+  "pub_date": "2026-06-22T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGdBUEtETTJjazRTaTYxUmRVdW5rZW1rT3dpQUxxWmNzZ2pnN3pzNkdxaWdUek1WZ2Q4ZWl1d3ZNM3kvSExhN0JOdlBxMk45a3M0WFhWbmRqZEw2Z3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDk2OTAzCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41MF94NjQtc2V0dXAuZXhlCng5eW0zVTUybzVteGtXVWRvUHdnT1NxMzRwZERGRmhKaWZCUi8wZUhZcHltK0l3c09HU1YwTTB0bmVUdEVIRGkzNWZrVVh6Z2dPU01rZ0dyUm9rNEN3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.50/Synx.Sistema_1.0.50_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHRzRWk0NmZPckVha3A3dmdidEc1RmFrTGQ1bUVJOEtBc3Vkc0hxcXdoNnhSU0I4V1BUYm42V28wbE9oQ3BSOG9iNjVjQzBWRWZUKzVLYjZRelk0M2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDk3MjE1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41MV94NjQtc2V0dXAuZXhlCjJNYWhpeENab0N1eXp0NTZXeWltUHVoUm04Wm5PQmhRUG5wWUQza2FaRzNvK2YzOFVLd2FqRVR1Q3RtWHNicW5ibVdacWNLSjEvYzIrSXpPV2lLbkJ3PT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.51/Synx.Sistema_1.0.51_x64-setup.exe"
     }
   }
 }
