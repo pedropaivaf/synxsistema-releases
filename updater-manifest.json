@@ -1,11 +1,11 @@
 {
-  "version": "1.0.51",
-  "notes": "Reordenação: Vendas por Categoria à esquerda (col-span-3) + Top 10 Produtos à direita (col-span-2). Divisor sutil entre os dois.",
+  "version": "1.0.52",
+  "notes": "TIER 1 hotfix de segurança e robustez: senha removida do localStorage (XSS exposure); race condition em batch_save_mappings/set_product_cost_manual resolvida via write_lock global; importação NF-e agora mostra banner amarelo quando linhas falham (era silent); audit history de custos gravado DEPOIS da escrita no mapping (sem orphan rows). 78 testes verdes (+3 novos).",
   "pub_date": "2026-06-22T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHRzRWk0NmZPckVha3A3dmdidEc1RmFrTGQ1bUVJOEtBc3Vkc0hxcXdoNnhSU0I4V1BUYm42V28wbE9oQ3BSOG9iNjVjQzBWRWZUKzVLYjZRelk0M2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMDk3MjE1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41MV94NjQtc2V0dXAuZXhlCjJNYWhpeENab0N1eXp0NTZXeWltUHVoUm04Wm5PQmhRUG5wWUQza2FaRzNvK2YzOFVLd2FqRVR1Q3RtWHNicW5ibVdacWNLSjEvYzIrSXpPV2lLbkJ3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.51/Synx.Sistema_1.0.51_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGgrVHpOdVpmVElCU2RlZkRTQ2RXelRhRzhpOXJnbmd2MFN5UExOK2J6UlRQMmYxNkY5bVJFbzVHYkJOTmNoNVRxQUxSak1uYXAwYkU5Q1hyYXl2SlE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTM5OTgyCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41Ml94NjQtc2V0dXAuZXhlCm5DK2lNcWw0NCt1bG1ESk1NUXJlTFJQTGJ6OTJSRk1zN1ZSaUdlV1dUWjd0ZDNGL0hrejVlbjJJcXV3NllQVTZFVHlhMUNRbmhKVVB4cldndWhYbkJBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.52/Synx.Sistema_1.0.52_x64-setup.exe"
     }
   }
 }
