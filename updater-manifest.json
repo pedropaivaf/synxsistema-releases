@@ -1,11 +1,11 @@
 {
-  "version": "1.0.56",
-  "notes": "Feature flags por tenant: admin pode habilitar/desabilitar abas (Dashboard, Importar NF-e, Vitrine, Alertas, Custos, Fiscal) por cliente via novo modal 'Features' no Painel Admin. Default vazio = tudo on (backward compat). Cliente precisa relogar pra ver mudanças. + Keep-alive cron no Supabase Free (anti auto-pause após 7 dias inativo). 86 testes verdes. ⚠️ Aplicar supabase/migrations/06_tenant_features.sql no SQL Editor do Supabase.",
+  "version": "1.0.57",
+  "notes": "Hotfix Eye API: pre-flight de credenciais agora classifica erros do teste. 401/403 (typo de UUID ou chave revogada) segue bloqueando como antes — proteção anti-typo da v1.0.53 preservada. Mas HTTP 400/429 (AWS WAF da Eye em cooldown por excesso de tentativas) e erros de rede passam a mostrar banner âmbar com botão 'Salvar mesmo assim'. Resolve o caso em que a Eye blocava o endpoint /points temporariamente após múltiplos testes, impedindo cadastro de credenciais. Sincronização de produção (que usa /products, /transactions, /menus) confirma se as chaves funcionam. Também inclui migration Supabase 08 (preenche tokens string NOT NULL no auth.users, fix do erro 'Database error querying schema' pós-cadastro — issue supabase/auth#1940). 86 testes verdes. ⚠️ Aplicar supabase/migrations/08_admin_create_tenant_token_defaults.sql se já não tiver feito.",
   "pub_date": "2026-06-22T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGhVaWMxam9aNVlQY3JJckc5QUVISWl5NlZGNUt4bmI1YnpQdzNtQm1KSnlqZXFEdTJXNzU4QmdaRzY3Q0I0VWE0NFhhUjVRdTNjeEY5cG54Wlo1WVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTY3NTUwCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41Nl94NjQtc2V0dXAuZXhlCjV4eFVPSzBSeDJNYzRscVFuRWN3SEtLL2RoQUtPeittZ2FYZEsweDY0alNsaUNHblllZlEwK1MxdXpMbkZxTUNyVFoxTWtwbDN4ajFXWUI1OHVRRkNBPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.56/Synx.Sistema_1.0.56_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGlsWDB5dm5lZGZuM3FjRlRQNjUza1ZIMGpWQVdia3pLcEkvam0reGFuQXN6TmgrRlFDVmc3T1oxVzYrb1N1a0pzVzRYTmJNRUtsSTJqc1FaSlhQbVFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTc5MjY4CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41N194NjQtc2V0dXAuZXhlClRydVpzUDYxeTJtWVZlY3l3ODlUMTEwdmtmcXJzdkpBemVmZTUzYVRieGNjbDR1YkgzVWdXUnQ3TExpYW1VcGpiMTNhMmFCYUdsNngxS2JrcG56bER3PT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.57/Synx.Sistema_1.0.57_x64-setup.exe"
     }
   }
 }
