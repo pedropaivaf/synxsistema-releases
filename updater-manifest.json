@@ -1,11 +1,11 @@
 {
-  "version": "1.0.58",
-  "notes": "DevPanel ganha seção 'Tenants no banco local' (botão DEV no canto inferior direito): lista todos tenant_ids encontrados no SQLCipher local com contagem de rows por tabela + botão 'Purgar' por tenant com confirmação dupla. Resolve UNIQUE constraint failed: product_mappings.id quando admin (sem tenant_id, salva rows com tenant_id='') sincroniza Eye numa máquina e depois cliente real loga na MESMA máquina com mesmas credenciais. Em produção (1 cliente = 1 PC) o problema não existe — ferramenta de teste/dev. Nenhuma mudança em comportamento existente. 86 testes verdes.",
-  "pub_date": "2026-06-22T00:00:00Z",
+  "version": "1.0.59",
+  "notes": "Botão 'Resync completo (180d)' em Configurações: força próximo sync a baixar 180 dias completos de vendas (em vez do delta 7d incremental). Use quando Dashboard mostrar dados incompletos — KPIs zerados OU Faturamento 7d = 15d = 30d. Resolve caso em que start_eye_initial_sync (no Salvar mesmo assim do bypass v1.0.57) grava marcador de 'sync feito' mas só popula janela 90d em last_sale_date, deixando eye_orders_cache vazio. Botão limpa o marcador + dispara force_eye_sync que agora detecta 'primeira vez' e baixa 180d. 86 testes verdes.",
+  "pub_date": "2026-06-24T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZ2RkZvUHZOU0xyZWVGQmpnS2J5K1BWdFZaaTlsbW5CZ2NoejlGODBUUkZ0aTcyNUJsTDhYV0RoYk1wV1BmbHJRSTJvVTczL2NKVWhqWEwrODZyZXdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzEwNzg3CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41OF94NjQtc2V0dXAuZXhlCmc0NlFiL3RIamNkbHZGcjgvRm1VaTV5V292c0J1Z0xpWCtYOWo3aWFjZCtpMWM1QWJTOTdqRVNnQzFzZ1lEc1JPZzl4S3hiMjg0b05OWk5OMmZOS0JnPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.58/Synx.Sistema_1.0.58_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZFbDhNR2RKUEplT2lObFZoY1hPcXowNy8yUk1tY2I1REFUNWtYbEI3QVhOdnVFU05IazV4TDJxVVczdFdpSWwzcnVZRnRQTy9UOGN4YXJuNlE0NkFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzE1Mzg0CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41OV94NjQtc2V0dXAuZXhlCm1QSEwzMS9iZmk0M0xlMk94OGtyZ0I3OVNXdU1lZW5NYkVXMG5xZXFFNHJUTVdra3Jsc016T1FvTWcrcGJHLzZYT1ptZGtmZ3JPS0taQ0V3WTk5T0NnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.59/Synx.Sistema_1.0.59_x64-setup.exe"
     }
   }
 }
