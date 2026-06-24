@@ -1,11 +1,11 @@
 {
-  "version": "1.0.60",
-  "notes": "Tendência Mensal ganha comparação apple-to-apple no mês corrente parcial. Antes, jun 1-24 era comparado com mai INTEIRO (1-31), resultando em delta enviesado tipo ↑452%. Agora, quando o mês corrente está em curso, o gráfico mostra widget full-width abaixo com 3 colunas: mês atual (1-N), mesmo período do mês anterior (1-N), e variação % + R$ absoluto. Comparação justa pra entender se o ritmo do mês corrente está acima ou abaixo do anterior. Backend novo campo DashboardStats.monthly_partial_prev. CACHE_VERSION 4→5 força recálculo do cache. 86 testes verdes.",
+  "version": "1.0.61",
+  "notes": "BUG-006 — Faturamento agora é LÍQUIDO. A versão anterior somava reembolsos, transferências e pedidos abertos como receita, inflando o número em ~22% (no Novelino's: R$ 114.495 quando o real era R$ 93.475). v1.0.61 captura `transaction_pays[].pay_type_name` da Eye API e filtra REEMBOLSO + canceladas + total≤0. Dashboard ganha banner cinza abaixo dos KPIs com transparência total: \"Excluídos do Faturamento 30d: R$ X em N reembolsos + R$ Y em Z outras (canceladas/transferências/pedidos)\". KPI Faturamento 30d mostra \"líquido · bruto R$ X\" quando há filtragem. Margem ponderada também ignora reembolsos. Nova migration `pays_json` em eye_orders_cache. CACHE_VERSION 5→6 força recálculo. 86 testes verdes. ⚠️ Após instalar, abrir Configurações → Dashboard → \"Resync completo (180d)\" pra repovoar pays_json no cache local (sem isso, valores antigos do cache rodam como brutos até o próximo sync completo).",
   "pub_date": "2026-06-24T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHNacWpXNi9qOFNIMDVxNkVhb08rdXFFYlUyVXIyakZTN21qZmhhMUdRNDNLSjBPUVhYK0NabGNlRFNOM3pNMVZ4cmNkYWdvZ1ZZbjh2TVd6SzI3VFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzE5MTY5CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42MF94NjQtc2V0dXAuZXhlCmErRVMwN3gxR2dUNTdqb1Z4RUN0RjlKUmJ1RWI2RVh6MnR0OTB1eDc3d1FKYVF6L0gyWFc0bWV2MFRBLzAxb2NaRmEwR05zVDA2cE9xcDROa2ZrcURBPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.60/Synx.Sistema_1.0.60_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG41VnFzZDNuampSRDhkc3Z1cEM1WmFHSHRiYnR6RVhsWndkLzdWTHFvVytaVi83SGJSWWh4YkRJN2tPVldIT1Z3SkppS2orQ2dGajI4VnZKK0l6U1FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzIyNTc1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42MV94NjQtc2V0dXAuZXhlClh4WnRZRTBQR3lBOHBQTkhFcXVJejVjYTVzV2xYVEdZbFpQT05WL0dGOS81eDQvSzAxdmVHMmhqN1h3c2ZRK3M3bDFhZnlyTnd2SlZNOFBoN3dsVEJBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.61/Synx.Sistema_1.0.61_x64-setup.exe"
     }
   }
 }
