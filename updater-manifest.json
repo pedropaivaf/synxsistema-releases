@@ -1,11 +1,11 @@
 {
-  "version": "1.0.59",
-  "notes": "Botão 'Resync completo (180d)' em Configurações: força próximo sync a baixar 180 dias completos de vendas (em vez do delta 7d incremental). Use quando Dashboard mostrar dados incompletos — KPIs zerados OU Faturamento 7d = 15d = 30d. Resolve caso em que start_eye_initial_sync (no Salvar mesmo assim do bypass v1.0.57) grava marcador de 'sync feito' mas só popula janela 90d em last_sale_date, deixando eye_orders_cache vazio. Botão limpa o marcador + dispara force_eye_sync que agora detecta 'primeira vez' e baixa 180d. 86 testes verdes.",
+  "version": "1.0.60",
+  "notes": "Tendência Mensal ganha comparação apple-to-apple no mês corrente parcial. Antes, jun 1-24 era comparado com mai INTEIRO (1-31), resultando em delta enviesado tipo ↑452%. Agora, quando o mês corrente está em curso, o gráfico mostra widget full-width abaixo com 3 colunas: mês atual (1-N), mesmo período do mês anterior (1-N), e variação % + R$ absoluto. Comparação justa pra entender se o ritmo do mês corrente está acima ou abaixo do anterior. Backend novo campo DashboardStats.monthly_partial_prev. CACHE_VERSION 4→5 força recálculo do cache. 86 testes verdes.",
   "pub_date": "2026-06-24T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZFbDhNR2RKUEplT2lObFZoY1hPcXowNy8yUk1tY2I1REFUNWtYbEI3QVhOdnVFU05IazV4TDJxVVczdFdpSWwzcnVZRnRQTy9UOGN4YXJuNlE0NkFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzE1Mzg0CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41OV94NjQtc2V0dXAuZXhlCm1QSEwzMS9iZmk0M0xlMk94OGtyZ0I3OVNXdU1lZW5NYkVXMG5xZXFFNHJUTVdra3Jsc016T1FvTWcrcGJHLzZYT1ptZGtmZ3JPS0taQ0V3WTk5T0NnPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.59/Synx.Sistema_1.0.59_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHNacWpXNi9qOFNIMDVxNkVhb08rdXFFYlUyVXIyakZTN21qZmhhMUdRNDNLSjBPUVhYK0NabGNlRFNOM3pNMVZ4cmNkYWdvZ1ZZbjh2TVd6SzI3VFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzE5MTY5CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42MF94NjQtc2V0dXAuZXhlCmErRVMwN3gxR2dUNTdqb1Z4RUN0RjlKUmJ1RWI2RVh6MnR0OTB1eDc3d1FKYVF6L0gyWFc0bWV2MFRBLzAxb2NaRmEwR05zVDA2cE9xcDROa2ZrcURBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.60/Synx.Sistema_1.0.60_x64-setup.exe"
     }
   }
 }
