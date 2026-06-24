@@ -1,11 +1,11 @@
 {
-  "version": "1.0.57",
-  "notes": "Hotfix Eye API: pre-flight de credenciais agora classifica erros do teste. 401/403 (typo de UUID ou chave revogada) segue bloqueando como antes — proteção anti-typo da v1.0.53 preservada. Mas HTTP 400/429 (AWS WAF da Eye em cooldown por excesso de tentativas) e erros de rede passam a mostrar banner âmbar com botão 'Salvar mesmo assim'. Resolve o caso em que a Eye blocava o endpoint /points temporariamente após múltiplos testes, impedindo cadastro de credenciais. Sincronização de produção (que usa /products, /transactions, /menus) confirma se as chaves funcionam. Também inclui migration Supabase 08 (preenche tokens string NOT NULL no auth.users, fix do erro 'Database error querying schema' pós-cadastro — issue supabase/auth#1940). 86 testes verdes. ⚠️ Aplicar supabase/migrations/08_admin_create_tenant_token_defaults.sql se já não tiver feito.",
+  "version": "1.0.58",
+  "notes": "DevPanel ganha seção 'Tenants no banco local' (botão DEV no canto inferior direito): lista todos tenant_ids encontrados no SQLCipher local com contagem de rows por tabela + botão 'Purgar' por tenant com confirmação dupla. Resolve UNIQUE constraint failed: product_mappings.id quando admin (sem tenant_id, salva rows com tenant_id='') sincroniza Eye numa máquina e depois cliente real loga na MESMA máquina com mesmas credenciais. Em produção (1 cliente = 1 PC) o problema não existe — ferramenta de teste/dev. Nenhuma mudança em comportamento existente. 86 testes verdes.",
   "pub_date": "2026-06-22T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGlsWDB5dm5lZGZuM3FjRlRQNjUza1ZIMGpWQVdia3pLcEkvam0reGFuQXN6TmgrRlFDVmc3T1oxVzYrb1N1a0pzVzRYTmJNRUtsSTJqc1FaSlhQbVFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTc5MjY4CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41N194NjQtc2V0dXAuZXhlClRydVpzUDYxeTJtWVZlY3l3ODlUMTEwdmtmcXJzdkpBemVmZTUzYVRieGNjbDR1YkgzVWdXUnQ3TExpYW1VcGpiMTNhMmFCYUdsNngxS2JrcG56bER3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.57/Synx.Sistema_1.0.57_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZ2RkZvUHZOU0xyZWVGQmpnS2J5K1BWdFZaaTlsbW5CZ2NoejlGODBUUkZ0aTcyNUJsTDhYV0RoYk1wV1BmbHJRSTJvVTczL2NKVWhqWEwrODZyZXdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzEwNzg3CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC41OF94NjQtc2V0dXAuZXhlCmc0NlFiL3RIamNkbHZGcjgvRm1VaTV5V292c0J1Z0xpWCtYOWo3aWFjZCtpMWM1QWJTOTdqRVNnQzFzZ1lEc1JPZzl4S3hiMjg0b05OWk5OMmZOS0JnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.58/Synx.Sistema_1.0.58_x64-setup.exe"
     }
   }
 }
