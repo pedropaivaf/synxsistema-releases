@@ -1,11 +1,11 @@
 {
-  "version": "1.0.64",
-  "notes": "Dev tool: novo botão 'Exportar snapshot' no DevPanel pra dumpar o eye_orders_cache local (SEM PII) em JSON compacto. Permite validar bugs de stats/classify offline em integration tests, sem precisar reproduzir manualmente no app. Sem mudança em lógica de negócio, sem migration nova, sem bump de CACHE_VERSION — totalmente seguro de instalar (não invalida cache atual, Faturamento 30d continua R$ 88.359,22 no Novelino's). Próximo passo: Pedro clica DEV → 'Exportar snapshot' do tenant novelinos-bar → manda JSON pra Claude usar como fixture em integration test. 103 testes verdes (zero regressão).",
-  "pub_date": "2026-06-24T00:00:00Z",
+  "version": "1.0.65",
+  "notes": "BUG-008 fix: Faturamento 30d alinhado com Eye 'Venda + Baixa' (tx.type 4 = BAIXA com NFC-e agora conta como receita real). No Novelino's: ~R$ 88.359 → ~R$ 99.969 (565 transações de R$ 11.475 que ficavam silenciosamente excluídas). Validado offline com 5 integration tests contra dataset real (4691 tx do snapshot 2026-06-25, SEM PII). Workflow adversarial paralelo (4 agents Opus, 0 critical, 3 high únicos) confirmou seguro pra release. CACHE_VERSION 8→9 força recálculo automático no upgrade (sem Resync necessário). Tooltip do banner explicita type 4 como receita. Banner mostra exclusões com bucket 'outras' ~R$ 5k menor (BAIXA NFC saiu desse balde). 110 testes verdes (+7 vs v1.0.64).",
+  "pub_date": "2026-06-24T23:14:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHV5eGtTSS82eVJMMnVTbi9qK1o0N0NRNXhFc1NUdEJFZWw2UTYraXI4cyswNUp1SGtzWW9tME9Va2ZabVkvMURUcEZiTXBYUUc1UTJ0WGxORGg4eEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzQ5MDEyCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42NF94NjQtc2V0dXAuZXhlClRjRG11UFV3ZEoxTktRcFFzcEVZVDA2cTRCdWIyUkNTVkhIdk5ha0J5VGxvdlI4aTU4RzZvVkNQU1BRMmk4QzRGOG5FbnBHdU5rQUt2NXgrcXdXbkJ3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.64/Synx.Sistema_1.0.64_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHIzN1p3b2E5aHVwM1ErZnZ2YWM4c0RIY1cwd0czMXdzUVptbGpQN0VWRXRSdUFNeG5TemJoalp0UlBHNUxuZ25CMUs3TlhCenFzZ0RzNXlaZmhWVEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzUzNjYwCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42NV94NjQtc2V0dXAuZXhlClp5Um1oZ25TK2N4N1R3UjlWeHFFaVczVFNJTmpjR2dldDF3bnpGOGJDM2JJR2QzM2VOZCs4SzdnS0dacEJBVkl2WHdiTVUyK042eElIeFJOYzBVb0FnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.65/Synx.Sistema_1.0.65_x64-setup.exe"
     }
   }
 }
