@@ -1,11 +1,11 @@
 {
-  "version": "1.0.63",
-  "notes": "BUG-007 fix: v1.0.62 errou pra menos (R$ 91.576 vs esperado R$ 93.475) porque a heurística items.is_empty() pegou TROCO e FIDELIDADE da Eye como falso positivo de transferência. Causa: a Eye expõe Transaction como movimentação financeira (não venda), e o campo tx.type (int 0-18) é o discriminador real — Synx descartava o campo. v1.0.63 persiste tx_type no cache (migration nova) e usa whitelist por tipo em classify_tx_for_revenue: tipos 0/15/18 (VENDA/PEDIDO/ECOMMERCE) contam como receita; 1/2/9/10 viram cash_movement (bucket novo no banner); 7/8 viram transfer; 16/17 viram change/loyalty; 3-6/11-14 viram other_movement; tipo desconhecido vira unknown_type (conservador). Banner ganha 4ª linha 'mov. de caixa (retirada/suprimento/funcionário)' separado. CACHE_VERSION 7→8. 103 testes verdes (99 lib + 4 main). ⚠️ Após instalar, abra Configurações → 'Resync completo (180d)' pra repopular tx_type no cache local (sem isso, linhas antigas têm tx_type=0 default = todas viram venda).",
+  "version": "1.0.64",
+  "notes": "Dev tool: novo botão 'Exportar snapshot' no DevPanel pra dumpar o eye_orders_cache local (SEM PII) em JSON compacto. Permite validar bugs de stats/classify offline em integration tests, sem precisar reproduzir manualmente no app. Sem mudança em lógica de negócio, sem migration nova, sem bump de CACHE_VERSION — totalmente seguro de instalar (não invalida cache atual, Faturamento 30d continua R$ 88.359,22 no Novelino's). Próximo passo: Pedro clica DEV → 'Exportar snapshot' do tenant novelinos-bar → manda JSON pra Claude usar como fixture em integration test. 103 testes verdes (zero regressão).",
   "pub_date": "2026-06-24T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGdSUkdwek9TaEE1YVNBa2g1TnVUbm9OV3YxUlVBN1Bzd2kzMTliOXdMck45Mm4vZlNGa3V6ZFFiY202dUU0Rnl4VGxrWDR0RHBQVWxtLzBQc0VBbGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzMxNjY2CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42M194NjQtc2V0dXAuZXhlCmNrZ0JhN3FSZi9idUhDV0lnUVRUR1ZPZWRRK05FRXpqMDExUk1TbzdVQVlqcFJGSW96UjNjcDJMdFI5U3UvUVJRNkZDSUZDalNuVjY2QXdSN09JaUFnPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.63/Synx.Sistema_1.0.63_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHV5eGtTSS82eVJMMnVTbi9qK1o0N0NRNXhFc1NUdEJFZWw2UTYraXI4cyswNUp1SGtzWW9tME9Va2ZabVkvMURUcEZiTXBYUUc1UTJ0WGxORGg4eEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzQ5MDEyCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42NF94NjQtc2V0dXAuZXhlClRjRG11UFV3ZEoxTktRcFFzcEVZVDA2cTRCdWIyUkNTVkhIdk5ha0J5VGxvdlI4aTU4RzZvVkNQU1BRMmk4QzRGOG5FbnBHdU5rQUt2NXgrcXdXbkJ3PT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.64/Synx.Sistema_1.0.64_x64-setup.exe"
     }
   }
 }
