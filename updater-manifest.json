@@ -1,11 +1,11 @@
 {
-  "version": "1.0.68",
-  "notes": "Hotfix: atalho Ctrl+Shift+D pra abrir DevPanel em build de produção. v1.0.67 deixou o comando 'Auto-validar Dashboard' inacessível em prod (o gate import.meta.env.DEV resolve false em build de release, Vite tree-shake). Agora: novo state devForced + keyboard listener em App.tsx — Ctrl+Shift+D toggla o DevPanel em qualquer build. Em modo dev (npm run tauri dev) DevPanel continua aparecendo por default. Cliente final não descobre o atalho. Zero impacto numérico, zero risco. 111 testes verdes.",
-  "pub_date": "2026-06-25T12:15:00Z",
+  "version": "1.0.69",
+  "notes": "Painel de Saúde completo no DevPanel — manutenibilidade guiada. (1) Auto-validar Dashboard agora exibe 'AÇÃO: ...' explícita em cada status (👉 instrução do que fazer, tempo esperado), + warning se dados > 1h velhos. (2) Histórico das últimas 10 validações persistido em config, exibido em <details> colapsável (verde ok / amarelo fail). (3) Novo botão azul 'Diagnóstico de saúde' roda 8 checks: licença + dias restantes, Eye API configurada, idade dos dados, pendências NF-e, margem ponderada (custos NF-e cadastrados?), backup nuvem, orders no cache, products mapeados. Cada check tem status colorido (ok/warn/fail) + label + detalhe + ação concreta. Overall = pior check. (4) Botão preto 'Exportar diagnóstico completo (.txt)' gera download synx-diagnostico-<tenant>-<stamp>.txt com 3 seções (Auto-validar + Diagnóstico + Histórico). Útil pra mandar pro Claude debugar (substitui múltiplos screenshots). Atalho Ctrl+Shift+D continua abrindo DevPanel em build de produção. Zero impacto numérico no Dashboard normal. 111 testes verdes. CACHE_VERSION segue 9.",
+  "pub_date": "2026-06-25T12:31:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZtUWQzMTc0RUlTZWVxamtoa0xiUkplUDRHSU9pdmtYNmdrdDVVd0tyaTFsaE1RQ3owQjc2MG51c2JDK3pUYWF3RHdtT3ZjTXFFTllyeWFQZUdLOVFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNDAwNTUxCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42OF94NjQtc2V0dXAuZXhlCjRCb2IwWkx0YTJUalRobnAxSjRrdzUyL25Cc2lGZHhtQzNXQkNWRG1IU3Z3bmxRMmw5dlpDdVRHVHY0WGtsTnIzZCtYWWdWaUMrUzNOVDdPOGlkL0R3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.68/Synx.Sistema_1.0.68_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZZZzFINTloRHhPZEFGT0tDV1RqUlZKWFU4OEhzWHdibFA3dHFqWmFpSXY4T1loZmI3OUVORzhoVmRSbUNnVE0vWm9Kc2J5VkRqbW9hVXNSQW92NXdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNDAxNDk2CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42OV94NjQtc2V0dXAuZXhlCko2QUFmeVRKUm80OXEySVFLUURFR3dCL1hUSTNXaUNHRzRScFczRDJ6VHZPR0IrQ3EwVVlDc3FKclIvR1BXWlBMYnl3cW5jNFRaWDNpQktYWlhsckFRPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.69/Synx.Sistema_1.0.69_x64-setup.exe"
     }
   }
 }
