@@ -1,11 +1,11 @@
 {
-  "version": "1.0.65",
-  "notes": "BUG-008 fix: Faturamento 30d alinhado com Eye 'Venda + Baixa' (tx.type 4 = BAIXA com NFC-e agora conta como receita real). No Novelino's: ~R$ 88.359 → ~R$ 99.969 (565 transações de R$ 11.475 que ficavam silenciosamente excluídas). Validado offline com 5 integration tests contra dataset real (4691 tx do snapshot 2026-06-25, SEM PII). Workflow adversarial paralelo (4 agents Opus, 0 critical, 3 high únicos) confirmou seguro pra release. CACHE_VERSION 8→9 força recálculo automático no upgrade (sem Resync necessário). Tooltip do banner explicita type 4 como receita. Banner mostra exclusões com bucket 'outras' ~R$ 5k menor (BAIXA NFC saiu desse balde). 110 testes verdes (+7 vs v1.0.64).",
-  "pub_date": "2026-06-24T23:14:00Z",
+  "version": "1.0.66",
+  "notes": "BUG-009 fix + Polling 60s licença + Force logout server-side + Callout dismissível + Checklist entrega cliente. (1) inventory.rs::refresh_cache agora filtra orders via classify_tx_for_revenue antes de somar item.quantity — items de REEMBOLSO/TROCO/FIDELIDADE/transferência/cancelada param de inflar qty_sold, corrigindo KPI 'Alertas Ativos' e Capital Parado. ensure_bug009_cache_invalidated (idempotente) apaga eye_sales_cache 1x pós-upgrade. (2) useLicense.ts polleia check_and_update_license a cada 60s — cliente bloqueado por admin perde acesso em ≤60s (era até 1h). Pausa via document.hidden, guard inFlight. (3) Migration 09 revoga refresh_tokens + force-expira auth.sessions ao executar admin_block/cancel/freeze — defesa server-side complementa polling frontend. (4) InfoCalloutDismissible novo: callout azul com localStorage flag, aparece UMA vez por máquina explicando que Faturamento agora inclui BAIXA NFC desde v1.0.65. (5) docs/entrega-cliente.md: checklist 8 STEPs pra entregar app a cliente novo. Workflow adversarial paralelo (2 agents Opus, 0 critical, 3 high únicos endereçados). 111 testes verdes (+1 vs v1.0.65). CACHE_VERSION segue 9 (não afeta dashboard_stats_json).",
+  "pub_date": "2026-06-25T10:47:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHIzN1p3b2E5aHVwM1ErZnZ2YWM4c0RIY1cwd0czMXdzUVptbGpQN0VWRXRSdUFNeG5TemJoalp0UlBHNUxuZ25CMUs3TlhCenFzZ0RzNXlaZmhWVEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzUzNjYwCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42NV94NjQtc2V0dXAuZXhlClp5Um1oZ25TK2N4N1R3UjlWeHFFaVczVFNJTmpjR2dldDF3bnpGOGJDM2JJR2QzM2VOZCs4SzdnS0dacEJBVkl2WHdiTVUyK042eElIeFJOYzBVb0FnPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.65/Synx.Sistema_1.0.65_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHVNK09hdndndnUxaHg2RmJnZE82V2crOTExUjlNb0ZFWkV0c1kwVThCMVE4YnJGVmVhWGlHRDJWQkJUWkNhY1BadVdVOU1NcFhPYXh0c2VmaVZud3dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzk1MjI5CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42Nl94NjQtc2V0dXAuZXhlCitTaUNwOW5URnZ4Z2xUVkFEZHFobmdBc0RYaTNCTlRUam8xZzlyaGVFS2wvZVJQRWMrS3NlY3ptalVRVVdoNUE4TUhIL1c3Y0N0RTc5YW4zUVQya0JnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.66/Synx.Sistema_1.0.66_x64-setup.exe"
     }
   }
 }
