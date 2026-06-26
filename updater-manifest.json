@@ -1,11 +1,11 @@
 {
-  "version": "1.0.72",
-  "notes": "Hotfix v1.0.71: (1) modal 'Inferir CST em massa' redesenhado pra TELA CHEIA com 3 colunas lado a lado (Alta NCM / Média Nome / Baixa Categoria). Cada coluna com scroll interno + header sticky + footer sticky. Sem mais 'modal cortado em baixo' do v1.0.71 que tinha max-w-4xl + mt-12 e não cabia 133 produtos. Botões 'Marcar todos / Desmarcar' por coluna, contador X/N por grupo, badge de CST sugerido com cor por confidence. (2) DevTools habilitado em release build (feature 'devtools' em Cargo.toml do tauri crate). Agora Ctrl+Shift+I abre console em produção pra diagnóstico de cliente. (3) Logs explícitos via console.log no click do botão 'Inferir CST em massa' e no useEffect do modal (mount/unmount + previewBulkInferCst OK/FALHOU) pra rastreabilidade.",
-  "pub_date": "2026-06-26T23:00:00Z",
+  "version": "1.0.73",
+  "notes": "Hotfix v1.0.72: (1) BUG 'pisca e nada' ao clicar 'Aplicar X selecionados' no BulkInferCstModal — apply_bulk_cst voltou a usar DELETE direto do cache do Dashboard em vez de recompute_and_cache_dashboard_stats síncrono (que travava UI por 10-30s em catálogo grande). Próximo acesso ao Dashboard detecta cache vazio e recalcula. (2) NOVA SEÇÃO 'Produtos sem CST' no Catálogo > Fiscal — bulk select com checkbox + filtro por categoria Eye + dropdown 5 CST options (CSOSN 500/102/400 + CST 00/60) + botão 'Aplicar [CST X] aos N selecionados'. Substitui o caso onde Pedro tinha que clicar 'Definir CST' 395 vezes pros produtos sem inferência automática. Reusa applyBulkCst do backend (source='manual_bulk' pra rastreabilidade). Cliente Novelino's: filtra por categoria 'BEBIDAS HAPPY', marca todos, aplica CSOSN 500 num clique — resolve 200+ produtos em 3-5 lotes.",
+  "pub_date": "2026-06-26T23:30:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHI5UGtzT0ZGY0hFaGxlWFJRdGVwRWdGdGdrWUN0Q3gxbnhHbVhsU2RBeXYzZmZ4bmVMMlBzZDhrTU12REx1RFBSZ3RyYVg1am1UekhraWI4eEdGelFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNDQyMzIyCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43Ml94NjQtc2V0dXAuZXhlCk5YdWpBMWlRbXlnblBlK2JjRnhLZ2dKUElFOUdUTnZ6SWhRYXRjM3J1WkdTVXpuVzRjZ0NicnhmU2wrWU1zZjBVRjJGekQwWGVscnZkNm9nTFVMRUFnPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.72/Synx.Sistema_1.0.72_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHYzeDNlVUJaZTRaMFF1QjZSaWJwTWVLYmIxcFdOaFErRHRpdEdGYmJMcThiTHB0K0VNeXV6a3Ayc1hndFJkZ2xpS1VCcTBoZ01lTlZWc1Y0d3hNWFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNDQzMTg2CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43M194NjQtc2V0dXAuZXhlCmZtWm5scDN0TVVCWkVSOEhudkp2MVB4TUlRYUhDVGw5OXhsWmRUR2svcHUzUlJDMWlBRS9uUzBMU2lKMEl6bUs4MUdmREF5bzNHc2wrNENrN3d6L0NBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.73/Synx.Sistema_1.0.73_x64-setup.exe"
     }
   }
 }
