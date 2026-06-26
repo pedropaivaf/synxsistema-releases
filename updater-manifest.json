@@ -1,11 +1,11 @@
 {
-  "version": "1.0.69",
-  "notes": "Painel de Saúde completo no DevPanel — manutenibilidade guiada. (1) Auto-validar Dashboard agora exibe 'AÇÃO: ...' explícita em cada status (👉 instrução do que fazer, tempo esperado), + warning se dados > 1h velhos. (2) Histórico das últimas 10 validações persistido em config, exibido em <details> colapsável (verde ok / amarelo fail). (3) Novo botão azul 'Diagnóstico de saúde' roda 8 checks: licença + dias restantes, Eye API configurada, idade dos dados, pendências NF-e, margem ponderada (custos NF-e cadastrados?), backup nuvem, orders no cache, products mapeados. Cada check tem status colorido (ok/warn/fail) + label + detalhe + ação concreta. Overall = pior check. (4) Botão preto 'Exportar diagnóstico completo (.txt)' gera download synx-diagnostico-<tenant>-<stamp>.txt com 3 seções (Auto-validar + Diagnóstico + Histórico). Útil pra mandar pro Claude debugar (substitui múltiplos screenshots). Atalho Ctrl+Shift+D continua abrindo DevPanel em build de produção. Zero impacto numérico no Dashboard normal. 111 testes verdes. CACHE_VERSION segue 9.",
-  "pub_date": "2026-06-25T12:31:00Z",
+  "version": "1.0.70",
+  "notes": "Importação NF-e + CSV automático pra Eye Mobile. Cliente Novelino's: importou XML no Synx → custos populados → clica 'Baixar CSV' → sobe CSV no painel Eye (web.eyemobile.com.br/stock/balance → 'Atualizar em massa') → estoque Eye atualiza. Tempo por NF: ~30min (digitação manual) → ~2min (2 cliques + 1 upload). Eye NÃO tem API de entrada de estoque (confirmado), mas painel web tem CSV bulk (SKU;Quantidade;Depósito). Synx gera CSV automático no formato exato. Anti-duplicação via chave NFe 44 chars — re-importar mesma NF não duplica estoque. Pré-requisito: cadastrar SKU dos produtos no painel Eye (modal lista pulados se faltarem). 115 testes verdes (+4). Workflow adversarial Opus: 1 critical + 3 high + 2 medium aplicados antes do build.",
+  "pub_date": "2026-06-25T22:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHZZZzFINTloRHhPZEFGT0tDV1RqUlZKWFU4OEhzWHdibFA3dHFqWmFpSXY4T1loZmI3OUVORzhoVmRSbUNnVE0vWm9Kc2J5VkRqbW9hVXNSQW92NXdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNDAxNDk2CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC42OV94NjQtc2V0dXAuZXhlCko2QUFmeVRKUm80OXEySVFLUURFR3dCL1hUSTNXaUNHRzRScFczRDJ6VHZPR0IrQ3EwVVlDc3FKclIvR1BXWlBMYnl3cW5jNFRaWDNpQktYWlhsckFRPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.69/Synx.Sistema_1.0.69_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHVocEpnSnJ0N05Ga21xNFBaS0xkbGRVcE5Wc0lHWEl1NlloTStZbVVLOUMwMHlXVVFON2FucjBPaXozbGxubWRBNWlXQlhLM3pqaGVFN1BRWERmaUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNDM1NjA4CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43MF94NjQtc2V0dXAuZXhlCmdXdUZLMld0S0IvbWRJV3VBYVU5TklUZ3UvMjlPZzByakV6bVJHL3BTMFl1ZExLZUduUTF1N2ZPUktkdUpLT3I4dEVHVkRjcDlCTzh0UkVCdW14N0NnPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.70/Synx.Sistema_1.0.70_x64-setup.exe"
     }
   }
 }
