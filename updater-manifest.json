@@ -1,11 +1,11 @@
 {
-  "version": "1.0.75",
-  "notes": "BUG FIX duplo CRÍTICO confirmado por 12 testes Rust automatizados. (1) WHERE do apply_bulk_cst desalinhado com derive_tax_profile: produtos com cst_icms='103' (CSOSN raro isento), '900' (outros) ou similares passavam pelo preview MAS o UPDATE não pegava — rows_affected=0 → frontend mostra 'pisca e nada'. Fix: WHERE substituído por whitelist NOT IN ('00','01','20','60','102','400','500') com TRIM. (2) BulkInferCstModal desmontava ao aplicar: CatalogFiscal usava refresh() que dispara setLoading(true), o que faz o `if (loading) return <p>Carregando…</p>` desmontar todo o JSX incluindo o modal. Pedro via mount → preview OK → unmount → mount em loop. Fix: novo refreshSilent() que recarrega items sem mexer no loading state — modal sobrevive ao refresh. Testes (12 novos, 114→126 total): NULL/vazio/raros/válidos/whitespace/vendor/tenant + 2 invariantes garantindo que WHERE ⇔ derive_tax_profile exatamente. Pedro pediu 'só lance build release quando tiver certeza' — todos os 126 verdes.",
-  "pub_date": "2026-06-27T00:15:00Z",
+  "version": "1.0.76",
+  "notes": "BUG FIX CRÍTICO descoberto pelo console do Pedro: apply_bulk_cst usava UPDATE puro, mas produtos do catálogo Eye que NUNCA tiveram venda não têm row em product_mappings (sync da Eye só cria row quando há transação). Esses produtos apareciam no preview (`list_catalog_items` itera o cache Eye mesmo sem row local) MAS o UPDATE retornava 0 rows. Console diagnosticado: queijo minas / CERVEJA ARTESANAL / Heineken Ultimate long neck retornavam 0 rows em list_mappings. Fix: substituído UPDATE por UPSERT (INSERT ... ON CONFLICT DO UPDATE) com mesmo WHERE de whitelist preservado. Sem row → INSERT cria. Com row sem CST → UPDATE sobrescreve. Com row CST válido → ON CONFLICT WHERE rejeita (race defense). 4 testes novos validam UPSERT: creates_row_when_missing, preserves_existing_valid_cst, updates_existing_null_cst, only_one_row_per_eye_id. 130 testes verdes (+4 vs v1.0.75).",
+  "pub_date": "2026-06-27T00:35:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGwxUlU5ZGtOL0wxbVRIdnVoTnI2UitQdnI4a2doWE96OHZIS2J0NmJJN3hFcm1CblR1T0xrWGp3NFdGbVZZN1FxVFQ2bUhsNldPMjR4MExsYjJJdEFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNDQ0ODE1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43NV94NjQtc2V0dXAuZXhlCm45SW12VnlYLzY4TWltZnhJYTcrVHY0YzBOUXN1VVh2Mm4raTM5UFhMeDVsQ0pnbXB3TkIrYVJBdVJTT0R0ZmtoN2lXSWh5MWFQZDlad1orWUs1ekN3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.75/Synx.Sistema_1.0.75_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGl5dTNldGNqakNMckl6cEFib2Y1ajVlcTNoMWdmT055aWRQT2Z4MUlLRVlZK2tVcUZzZ21ycGJhMld2eVVISlhBNHpzMUFMc25SMXl5T2M2empZclE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNDQ1ODM1CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43Nl94NjQtc2V0dXAuZXhlClZxRitOYXhMcFJQQUhkSXBBSTFDQkQzeVhwRVluVDNNMTZUZmMrQ0dlWVlNRXZRdG55bit6R2hrcTV6RThnL2RtZzc2Um1MbGRmT2lCam1UNUJCY0N3PT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.76/Synx.Sistema_1.0.76_x64-setup.exe"
     }
   }
 }
