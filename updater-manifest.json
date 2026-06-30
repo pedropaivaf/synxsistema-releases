@@ -1,11 +1,11 @@
 {
-  "version": "1.0.77",
-  "notes": "🍳 Nova aba Catálogo > Produção (Ficha Técnica). Cadastre insumos (matéria-prima) + crie fichas técnicas das porções → sistema calcula custo automaticamente + margem real descontando impostos. Recompute em cascata: quando custo de um insumo muda (NF-e ou edição manual), TODAS as fichas que usam ele recalculam + Dashboard Margem Ponderada reflete na hora. Cruzamento com vendas Eye 30d: cada ficha mostra Vendido + Lucro + Ranking. Cadastro de insumos em 3 caminhos: (a) cola texto de IA (peça pro ChatGPT listar insumos típicos + cole), (b) upload CSV/TSV/Excel, (c) cadastro manual inline. Import flexível: parser detecta delimiter (;/vírgula/tab/pipe), aceita vírgula decimal pt-BR. Progressive disclosure no UI: tela limpa com soma+imposto+margem sempre visíveis, detalhes via hover/click. Fail-loud: insumo sem custo OU porção sem CST = margem null com aviso âmbar (não calcula valor fake). Backend: 8 commands Tauri + motor de custo com conversão de unidade (kg/g/mg, L/ml/cl, un) + cascata transacional dentro do write_lock + CACHE_VERSION 10→11. 168 testes verdes (156 lib + 4 main + 8 integration). Review adversarial 5 agents Opus: HIGH (vírgula decimal corrompia custo de IA) + 2 MEDIUM (total_mappings inflado por insumos, linha duplicada RECIPE vs EYEMOBILE) corrigidos pré-build. Aba nasce vazia até cliente cadastrar insumos.",
-  "pub_date": "2026-06-27T01:00:00Z",
+  "version": "1.0.78",
+  "notes": "🔧 Fix da margem na Vitrine: agora usa o preço que o cliente realmente paga (PDV/menu_price), não o preço de referência do cadastro Eye (default_price). Alinha com Catálogo > Produção, Custos e Alertas — mesmo produto, mesma margem em todas as telas. Recálculo automático sem migração.",
+  "pub_date": "2026-06-29T17:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZGcwNkdISUFsSlFXNno2R3VnbDZhdThYQXZZOHZNNlBXeXpMVS8vTS9TeEtVQ0NXN0dRMG5DV0FqQklEWmRWd3N4ZUdMTmwvenBxYWt2bjhDM1BDY2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNTEyNzg4CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43N194NjQtc2V0dXAuZXhlClJaYVc5Q3hkQ2VXa0cwdjJ0VUNvamdOTHU3RDBESDA4SUxXamJPTjlUbEp5eWNJUXNFS0I4akZLTTVuQWtHQXpzSEhqbUNhdmZ3enlLUFc0enIxNUN3PT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.77/Synx.Sistema_1.0.77_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG52dW9ldEJiYVVRcFF6M3dXV0NZQ3ZiQUJCRnQwRkltajVSZ0UyQktvQ0xhcUdkNTRaMWJFV1ZCRkpSTkgzWkNDRmZXdW96OGMyMU9PbmVramNuWEFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNzQ5MjYyCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43OF94NjQtc2V0dXAuZXhlCkVWSURrbkwyZnJ3ODltcDJSVFVhUVowZEREM0JSY0FXdWEwd2JKZkFPVE1vMnhTK3ZlV0Z0SFBpSXYxN1dXTjhkNDJPRk1maGV5UUw1QUlSby83WEFBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.78/Synx.Sistema_1.0.78_x64-setup.exe"
     }
   }
 }
