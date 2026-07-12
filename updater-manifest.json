@@ -1,11 +1,11 @@
 {
-  "version": "1.0.78",
-  "notes": "🔧 Fix da margem na Vitrine: agora usa o preço que o cliente realmente paga (PDV/menu_price), não o preço de referência do cadastro Eye (default_price). Alinha com Catálogo > Produção, Custos e Alertas — mesmo produto, mesma margem em todas as telas. Recálculo automático sem migração.",
-  "pub_date": "2026-06-29T17:00:00Z",
+  "version": "1.0.79",
+  "notes": "📥 NF-e reais: o custo agora sai certo da nota. Impostos que faltavam (ICMS-ST, FCP-ST, IPI) entram no custo, e o valor passa a ser por unidade de venda (lata/garrafa) em vez de caixa. O custo importado aparece em Catálogo > Custos e entra na Margem Ponderada, sem sobrescrever o CST que você classificou. Itens da NF-e podem ser vinculados a insumos — as fichas técnicas recalculam sozinhas. Novo alerta de vencimento na aba Alertas (lotes vencidos, vencendo em ≤7 dias e capital em risco).",
+  "pub_date": "2026-07-11T21:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZG52dW9ldEJiYVVRcFF6M3dXV0NZQ3ZiQUJCRnQwRkltajVSZ0UyQktvQ0xhcUdkNTRaMWJFV1ZCRkpSTkgzWkNDRmZXdW96OGMyMU9PbmVramNuWEFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNzQ5MjYyCWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43OF94NjQtc2V0dXAuZXhlCkVWSURrbkwyZnJ3ODltcDJSVFVhUVowZEREM0JSY0FXdWEwd2JKZkFPVE1vMnhTK3ZlV0Z0SFBpSXYxN1dXTjhkNDJPRk1maGV5UUw1QUlSby83WEFBPT0K",
-      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.78/Synx.Sistema_1.0.78_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSbHRKWDExNTVwZHJ4cDIzQnJaUVB3WnhWblB6RVJJdlBEWHprZFArV25TQnRrMmZncEJEMlFCSzNlRm5iQVBzNXQ3N2FkTUFHRGRsRWU2UnpKTlNWTGZnT1pCZU9hcUFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzODE2NTY5CWZpbGU6U3lueCBTaXN0ZW1hXzEuMC43OV94NjQtc2V0dXAuZXhlCmc1WEp0TTYrZkxyZzlnZ2dCUVZpZGpnNWFFU1I4WVJNSU5pM0MvZ1dzMGxPUXdaRzFqOHI4Z2lXVGQwTmxtYjY0QjVSWitJaUF6VFN4MXg3ZWJvS0FBPT0K",
+      "url": "https://github.com/pedropaivaf/synxsistema-releases/releases/download/v1.0.79/Synx.Sistema_1.0.79_x64-setup.exe"
     }
   }
 }
